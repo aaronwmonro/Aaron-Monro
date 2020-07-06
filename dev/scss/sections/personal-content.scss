@@ -1,0 +1,131 @@
+// #section-id{
+//     div{
+
+//         h1{
+            
+
+//   text-align: right;
+//   color: black;
+//   position: fixed;
+            
+//         }
+//     }
+
+// }
+
+#personal-gallery{
+    padding: 110px 0 25px;
+   background-color: $grey;
+    @include md{
+        padding: 120px 0 45px;
+    }
+
+        ul{
+            display: grid;
+            gap: 25px;
+            grid-template-rows: repeat(8, 300px);
+
+            @include md{ 
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(4, 186px);
+                grid-template-areas: 
+                "one three two "
+                "five three seven "
+                "six six eight "
+                "six six four ";
+            }
+
+            @include lg{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 300px 500px 300px;
+                grid-template-areas: 
+                "three two four six"
+                "three five five six"
+                "eight eight seven one"
+                ;
+            }
+
+            li {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    height: 100%;
+                    width: 100%;
+                    
+
+                }
+            }
+
+            li:nth-child(1) {
+                @include md {
+                    grid-area: one;
+                }
+    
+            }
+    
+            li:nth-child(2) {
+                @include md {
+                    grid-area: two;
+                }
+            }
+    
+            li:nth-child(3) {
+                img{
+                    object-position: 100% 0%;
+
+                    @include lg{
+                        object-position: center;
+                    }
+                }
+                
+                @include md {
+                    grid-area: three;
+                    object-position: center;
+                }
+            }
+    
+            li:nth-child(4) {
+                img{
+                    object-position: 100% 0%;
+                }
+                @include md {
+                    grid-area: four;
+                }
+            }
+    
+            li:nth-child(5) {
+                @include md {
+                    grid-area: five;
+                }
+            }
+    
+            li:nth-child(6) {
+                img{
+                    object-position: 100% 20%;
+                    @include lg{
+                        object-position: center;
+                    }
+                }
+                @include md {
+                    grid-area: six;
+                }
+            }
+    
+            li:nth-child(7) {
+                img{
+                    object-position: 100% 20%;
+                }
+                @include md {
+                    grid-area: seven;
+                }
+            }
+
+            li:nth-child(8) {
+                @include md {
+                    grid-area: eight;
+                }
+            }
+        }
+        
+        
+}

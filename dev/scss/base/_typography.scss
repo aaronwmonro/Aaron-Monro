@@ -1,0 +1,40 @@
+/* =============
+    Typography
+============= */
+// font-family: 'Lato', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.section-title{
+    font-weight: 300;
+}
+
+.name-logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem-calc(34);
+    font-style: italic;
+
+    @include md{
+        font-size: rem-calc(36); 
+    }
+    @include md{
+        font-size: rem-calc(40); 
+    }
+    span{
+        font-weight: 200;
+    }
+}

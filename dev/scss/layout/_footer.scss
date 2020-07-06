@@ -1,0 +1,82 @@
+/* =============
+    Footer
+============= */
+footer{
+    background: rgba($color: #F6F6F6, $alpha: .60);
+    border-top: 3px black solid;
+    z-index: 1000;
+    div{display: grid;
+        grid-template-columns: 40% auto 30px;
+        grid-template-areas: "info sec social";
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        
+
+        #footer-info{
+            grid-area:info ;
+            li{ padding-bottom: 20px;
+            }
+            li:nth-child(1) {font-size: rem-calc(16);
+                @include md{
+                    font-size: rem-calc(24);
+                }
+            }
+            a:link,
+            a:visited {
+				color: black;
+				font-family: 'Lato', sans-serif;
+				font-size: rem-calc(13);
+				font-weight: 300;
+				text-decoration: none;
+				transition: 0.25s;
+                width: 100%;
+                @include md{
+                    font-size: rem-calc(16);
+                }
+			}
+			a:hover,
+            a:active {
+                color: $grey;
+			}
+    }
+
+    #footer-sections{grid-area: sec;
+        text-align: right;
+        li{padding-bottom: 15px;}
+        a:link,
+        a:visited {
+            color: black;
+            font-family: 'Lato', sans-serif;
+            font-size: rem-calc(14);
+            font-weight: 300;
+            text-decoration: none;
+            transition: 0.25s;
+            width: 100%;
+        }
+        a:hover,
+        a:active {
+            color: $grey;
+        }
+    
+    }
+
+    #footer-social{grid-area: social;
+        li{ padding-bottom: 10px;}
+        a:link,
+        a:visited {
+            color: black;
+            font-size: rem-calc(24);
+            transition: 0.25s;
+        }
+        a:hover,
+        a:active {
+            color: $grey;
+        }
+        
+    }
+        
+    }
+
+
+}
