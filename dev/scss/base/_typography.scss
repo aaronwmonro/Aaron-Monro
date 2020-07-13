@@ -25,7 +25,24 @@ p{
 .name-logo{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: rem-calc(34);
+    font-size: rem-calc(25);
+    font-style: italic;
+
+    @include md{
+        font-size: rem-calc(30); 
+    }
+    @include lg{
+        font-size: rem-calc(25); 
+    }
+    span{
+        font-weight: 200;
+    }
+}
+
+.section-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem-calc(28);
     font-style: italic;
 
     @include md{
@@ -36,5 +53,16 @@ p{
     }
     span{
         font-weight: 200;
+    }
+}
+
+.section-text{ padding: 20px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: rem-calc(16);
+    line-height: 25px;
+   text-align: justify;
+    @include md{
+        font-size: rem-calc(18); 
     }
 }

@@ -13,7 +13,17 @@ ul{
         list-style: none;
     }
 }
+.content-spacing{
+    padding-top: 60px;
+    @include md{
+        padding-top: 100px;
+    }
+}
 
+.item-spacing{
+    margin-top: 30px;
+
+}
 .header-container{
     display: grid;
     grid-template-columns: 15px auto 15px;

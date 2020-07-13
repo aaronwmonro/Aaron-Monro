@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/deploy/academic.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/academic.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -18,6 +26,206 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/academic/academic-hero.jpg": {
+		"ft": 16384,
+		"iS": 507353,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/academic-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-1.jpg": {
+		"ft": 16384,
+		"iS": 1350209,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-2.jpg": {
+		"ft": 16384,
+		"iS": 2735238,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-3.jpg": {
+		"ft": 16384,
+		"iS": 3476604,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-4.jpg": {
+		"ft": 16384,
+		"iS": 3047337,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-5.jpg": {
+		"ft": 16384,
+		"iS": 5912628,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/mock-up-6.jpg": {
+		"ft": 16384,
+		"iS": 6429950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/mock-up-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/pii-hero.jpg": {
+		"ft": 16384,
+		"iS": 2760943,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/pii-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/pii-mock.png": {
+		"ft": 32768,
+		"iS": 21662,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/pii-mock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/academic/pii-mock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/pii-mock.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/pii.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/pii.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-multi.jpg": {
+		"ft": 16384,
+		"iS": 6429950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/wndr-multi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/wndr-process-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-process-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-process-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-process-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-process-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr-process.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr-process.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/wndr.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/wndr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/deploy/img/home/home-hero.jpg": {
 		"ft": 16384,
@@ -153,6 +361,22 @@
 		"oAP": "/deploy/template.html",
 		"oF": 0
 		},
+	"/dev/academic.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/academic.html",
+		"oF": 2
+		},
+	"/dev/content/academic-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/academic-content.html",
+		"oF": 0
+		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -228,6 +452,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/tinySlider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/tinySlider-min.js",
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -330,6 +565,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/components/_tiny-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_tiny-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -382,6 +630,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_academic-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_academic-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -428,6 +689,28 @@
 		"oA": 0,
 		"oAP": "/deploy/template.html",
 		"oF": 2
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -1208,7 +1491,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -1956,7 +2239,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

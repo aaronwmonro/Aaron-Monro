@@ -13,7 +13,8 @@
 @import "components/_buttons";
 @import "components/_forms";
 @import "components/_navigation";
-
+@import "components/_fancy-box";
+@import "components/_tiny-slider";
 // Layout Styles
 @import "layout/_header";
 @import "layout/_footer";
@@ -21,3 +22,4 @@
 // Sections Styles
 @import "sections/index-content";
 @import "sections/personal-content";
+@import "sections/_academic-content";

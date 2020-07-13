@@ -2,96 +2,67 @@
     Header
 ============= */
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    background: rgba($color: #F6F6F6, $alpha: .60);
-    border-bottom: 3px black solid;
-    div {
-        display: grid;
-        grid-template-columns: 70% auto;
-        grid-template-areas: "logo burger";
-        
-        padding: 20px 0;
-        
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba($color: $grey, $alpha: .50);
 
-        @include md{
-          grid-template-columns: repeat(2, 1fr);
-        }
-        
-        #name-container{
-            align-items: center;
-            grid-area: logo;
-        }
-        
-        #myNav{
-            display: none;
-            background-color: black;
+  div {
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-template-areas: "logo burger";
 
-            .overlay {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0, 0.9);
-                overflow-x: hidden;
-                transition: 0.5s;
-              }
-              .overlay a {
-                padding: 8px;
-                text-decoration: none;
-                font-size: 36px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-              }
-              
-              .overlay a:hover, .overlay a:focus {
-                color: #f1f1f1;
-              }
-              
-              .overlay .closebtn {
-                position: absolute;
-                top: 20px;
-                right: 45px;
-                font-size: 60px;
-              }
-              
-              @media screen and (max-height: 450px) {
-                .overlay a {font-size: 20px}
-                .overlay .closebtn {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-                }
-              }
+    padding: 10px 0;
 
-            @include lg {
-				display: flex !important;
-                padding: 0;
-                justify-content: flex-end;
-                background-color: rgba($color: #000000, $alpha: .0);
-			}
-        }
-
-        #burger-container {
-            align-items: center;
-            color: black;
-            display: flex;
-            font-size: rem-calc(29);
-            justify-content: flex-end;
-            grid-area: burger;
-            @include lg {
-				display: none !important;
-			}
-			i {
-				cursor: pointer;
-			}
-        }
-
-        
+    @include lg {
+      padding: 20px 0;
     }
+
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #name-container {
+      align-items: center;
+      grid-area: logo;
+      display: flex;
+
+
+    }
+
+    #myNav {
+      display: none;
+
+      @include lg {
+        display: grid;
+      }
+    }
+
+    #burger-container {
+      align-items: center;
+      color: #F6F6F6;
+      display: flex;
+      background: black;
+      font-size: rem-calc(29);
+      justify-content: center;
+      grid-area: burger;
+      margin-right: -15px;
+      padding: 10px 15px 10px 0;
+
+      @include md {
+        margin-right: -30px;
+        padding: 10px 15px 10px 0;
+      }
+
+      @include lg {
+        display: none !important;
+      }
+
+      i {
+        cursor: pointer;
+      }
+    }
+
+
+  }
 }
