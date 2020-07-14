@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/deploy/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 0
+		},
 	"/deploy/academic.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -26,6 +34,25 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/about/aaron-monro-resume.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/aaron-monro-resume.pdf",
+		"oF": 0
+		},
+	"/deploy/img/about/head-shot.jpg": {
+		"ft": 16384,
+		"iS": 151159,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/head-shot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/img/academic/academic-hero.jpg": {
 		"ft": 16384,
@@ -141,6 +168,163 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/academic/pii.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-1.jpg": {
+		"ft": 16384,
+		"iS": 6914,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-2.jpg": {
+		"ft": 16384,
+		"iS": 9282,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-3.jpg": {
+		"ft": 16384,
+		"iS": 10038,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-4.2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-4.2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-4.jpg": {
+		"ft": 16384,
+		"iS": 8815,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-5.jpg": {
+		"ft": 16384,
+		"iS": 9531,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-6.jpg": {
+		"ft": 16384,
+		"iS": 11200,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-6.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/academic/process-7.jpg": {
+		"ft": 16384,
+		"iS": 9452,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/academic/process-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/academic/process-7.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/academic/process-7.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -361,6 +545,14 @@
 		"oAP": "/deploy/template.html",
 		"oF": 0
 		},
+	"/dev/about.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 2
+		},
 	"/dev/academic.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -368,6 +560,14 @@
 		"oA": 0,
 		"oAP": "/deploy/academic.html",
 		"oF": 2
+		},
+	"/dev/content/about-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/about-content.html",
+		"oF": 1
 		},
 	"/dev/content/academic-content.kit": {
 		"cB": 0,
@@ -400,6 +600,14 @@
 		"oA": 1,
 		"oAP": "/dev/global/footer.html",
 		"oF": 0
+		},
+	"/dev/global/google.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/google.html",
+		"oF": 1
 		},
 	"/dev/global/head.kit": {
 		"cB": 0,
@@ -552,6 +760,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/components/_juicer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_juicer.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -630,6 +851,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_about-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_about-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_academic-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -689,28 +923,6 @@
 		"oA": 0,
 		"oAP": "/deploy/template.html",
 		"oF": 2
-		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		}
 	},
 "hooks": [

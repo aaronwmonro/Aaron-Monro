@@ -5,14 +5,13 @@ footer {
     background: $grey;
 
     z-index: 1000;
-
+margin: -10px 0;
     div {
         display: grid;
         grid-template-columns: 40% auto 30px;
         grid-template-areas: "info sec social";
         align-items: center;
         gap: 20px;
-        margin-top: 20px;
 
 
         #footer-info {

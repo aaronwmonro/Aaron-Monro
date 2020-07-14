@@ -43,7 +43,7 @@ ul{
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
-
+    background-color: $grey;
     @include md{ grid-template-columns: 30px auto 30px;}
 
     @include lg{ grid-template-columns: 40px auto 40px;}

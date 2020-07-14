@@ -406,6 +406,7 @@ ul li {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". container .";
+  background-color: #F6F6F6;
 }
 @media (min-width: 768px) {
   .grid-container {
@@ -479,6 +480,8 @@ p {
   font-weight: 500;
   font-size: 1.5625rem;
   font-style: italic;
+  text-decoration: none;
+  color: black;
 }
 @media (min-width: 768px) {
   .name-logo {
@@ -595,7 +598,7 @@ textarea {
 }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
-  color: #C6330E;
+  color: #F6F6F6;
 }
 
 .fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
@@ -921,6 +924,22 @@ pre[class*=language-] {
   cursor: help;
 }
 
+.referral {
+  display: none !important;
+}
+
+.juicer-ad {
+  display: none !important;
+}
+
+#following-content {
+  background-color: #F6F6F6;
+}
+
+.j-message {
+  display: none !important;
+}
+
 /* =============
     Header
 ============= */
@@ -928,7 +947,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(246, 246, 246, 0.5);
+}
+@media (min-width: 992px) {
+  header {
+    background-color: rgba(246, 246, 246, 0.5);
+  }
 }
 header div {
   display: grid;
@@ -951,6 +974,36 @@ header div #name-container {
   grid-area: logo;
   display: flex;
 }
+header div #name-container a:link,
+header div #name-container a:visited {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+  transition: 0.25s;
+}
+@media (min-width: 768px) {
+  header div #name-container a:link,
+header div #name-container a:visited {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  header div #name-container a:link,
+header div #name-container a:visited {
+    font-size: 1.5625rem;
+  }
+}
+header div #name-container a:link span,
+header div #name-container a:visited span {
+  font-weight: 200;
+}
+header div #name-container a:hover,
+header div #name-container a:active {
+  color: #F6F6F6;
+}
 header div #myNav {
   display: none;
 }
@@ -968,12 +1021,12 @@ header div #burger-container {
   justify-content: center;
   grid-area: burger;
   margin-right: -15px;
-  padding: 10px 15px 10px 0;
+  padding: 10px 0 10px 0;
 }
 @media (min-width: 768px) {
   header div #burger-container {
     margin-right: -30px;
-    padding: 10px 15px 10px 0;
+    padding: 10px 0 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -991,6 +1044,7 @@ header div #burger-container i {
 footer {
   background: #F6F6F6;
   z-index: 1000;
+  margin: -10px 0;
 }
 footer div {
   display: grid;
@@ -998,7 +1052,6 @@ footer div {
   grid-template-areas: "info sec social";
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
 }
 footer div #footer-info {
   grid-area: info;
@@ -1113,7 +1166,7 @@ footer div #footer-social a:active {
   }
 }
 #personal-gallery ul li {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 #personal-gallery ul li img {
   object-fit: cover;
@@ -1338,10 +1391,62 @@ footer div #footer-social a:active {
 }
 
 /* --------------------------
+    PII-slider
+ --------------------------*/
+#pii-slides {
+  background-color: #F6F6F6;
+}
+#pii-slides > div p {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #1D639B;
+}
+#pii-slides > div p span {
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #pii-slides > div p {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #pii-slides > div p {
+    padding-bottom: 40px;
+  }
+}
+#pii-slides > div .my-slider-2 div {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #pii-slides > div .my-slider-2 div {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #pii-slides > div .my-slider-2 div {
+    height: 250px;
+  }
+}
+#pii-slides > div .my-slider-2 div img {
+  height: 100%;
+  width: 100%;
+  object-fit: auto;
+  object-position: center;
+}
+#pii-slides > div .tns-controls [aria-controls] {
+  color: #F6F6F6;
+  background: black;
+  border-radius: 0;
+}
+
+/* --------------------------
     PII-Hero-2
  --------------------------*/
 #pii-hero-2 {
   background-color: #F6F6F6;
+  margin-top: -10px;
 }
 #pii-hero-2 > div {
   background-image: url("../img/academic/pii-hero.jpg");
@@ -1431,7 +1536,7 @@ footer div #footer-social a:active {
 #wndr-container > div #wndr-colors div {
   width: auto;
   height: auto;
-  margin-right: -20px;
+  margin-right: -15px;
 }
 @media (min-width: 768px) {
   #wndr-container > div #wndr-colors div {
@@ -1526,7 +1631,7 @@ footer div #footer-social a:active {
 }
 @media (min-width: 992px) {
   #wndr-slides > div .my-slider div {
-    height: 550px;
+    height: 600px;
   }
 }
 #wndr-slides > div .my-slider div img {
@@ -1539,4 +1644,121 @@ footer div #footer-social a:active {
   color: #F6F6F6;
   background: black;
   border-radius: 0;
+  background-color: #F6F6F6;
+}
+
+/* =============
+    About Content
+============= */
+/* --------------------------
+    About-Information
+ --------------------------*/
+#about-container > div {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  #about-container > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "head content";
+  }
+}
+@media (min-width: 992px) {
+  #about-container > div {
+    margin: 0 100px;
+  }
+}
+#about-container > div aside {
+  background-image: url(../img/about/head-shot.jpg);
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #about-container > div aside {
+    height: auto;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  #about-container > div aside {
+    height: 60vh;
+  }
+}
+#about-container > div #about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: content;
+}
+@media (min-width: 768px) {
+  #about-container > div #about-content {
+    padding: 30px 0 30px 30px;
+  }
+}
+#about-container > div #about-content p {
+  grid-area: para;
+  padding: 20px 0 0;
+}
+@media (min-width: 768px) {
+  #about-container > div #about-content p {
+    padding: 0;
+  }
+}
+#about-container > div #about-content #resume-content {
+  grid-area: res;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+#about-container > div #about-content #resume-content div {
+  background-color: black;
+  width: 250px;
+  text-align: center;
+  padding: 20px 0;
+}
+#about-container > div #about-content #resume-content a:link,
+#about-container > div #about-content #resume-content a:visited {
+  color: #F6F6F6;
+  font-size: 1.125rem;
+  transition: 0.25s;
+  text-decoration: none;
+}
+#about-container > div #about-content #resume-content a:hover,
+#about-container > div #about-content #resume-content a:active {
+  color: black;
+}
+#about-container > div #about-content #about-social {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+#about-container > div #about-content #about-social a:link,
+#about-container > div #about-content #about-social a:visited {
+  color: black;
+  font-size: 2.1875rem;
+  transition: 0.25s;
+  padding: 0 40px;
+}
+#about-container > div #about-content #about-social a:hover,
+#about-container > div #about-content #about-social a:active {
+  color: #F6F6F6;
+}
+
+/* --------------------------
+   About-Map
+--------------------------*/
+#about-map > div #map {
+  width: 100%;
+  height: 400px;
+  background-color: #F6F6F6;
+}
+@media (min-width: 768px) {
+  #about-map > div #map {
+    height: 300px;
+  }
 }

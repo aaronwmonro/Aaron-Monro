@@ -170,11 +170,69 @@
 }
 
 /* --------------------------
+    PII-slider
+ --------------------------*/
+ #pii-slides {
+    background-color: $grey;
+
+    >div {
+        p{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            padding-bottom: 20px;
+            color: $blue;
+
+            span{
+                font-weight: 300;
+            }
+
+            @include md{
+                padding-bottom: 30px;
+            }
+            @include md{
+                padding-bottom: 40px;
+            }
+        }
+        .my-slider-2 {
+
+            div {
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 250px;
+                }
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: auto;
+                    object-position: center;
+                  
+                    
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $grey;
+            background: black;
+            border-radius: 0;
+
+        }
+    }
+}
+
+/* --------------------------
     PII-Hero-2
  --------------------------*/
 #pii-hero-2 {
     background-color: $grey;
-
+    margin-top: -10px;
     >div {
         background-image: url('../img/academic/pii-hero.jpg');
         height: 40vh;
@@ -202,6 +260,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     @include lg {
         height: 100vh;
@@ -267,7 +326,7 @@
             div {
                 width: auto;
                 height: auto;
-                margin-right: -20px;
+                margin-right: -15px;
 
                 @include md {
                     margin-left: -30px;
@@ -379,7 +438,7 @@
                 }
 
                 @include lg {
-                    height: 550px;
+                    height: 600px;
                 }
 
                 img {
@@ -395,6 +454,7 @@
             color: $grey;
             background: black;
             border-radius: 0;
+            background-color: $grey;
 
         }
     }

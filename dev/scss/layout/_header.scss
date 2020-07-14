@@ -5,7 +5,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: rgba($color: $grey, $alpha: .50);
+  @include lg{ background-color: rgba($color: $grey, $alpha: .50);}
 
   div {
     display: grid;
@@ -27,6 +27,32 @@ header {
       grid-area: logo;
       display: flex;
 
+      a:link,
+      a:visited {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(25);
+        font-style: italic;
+        text-decoration: none;
+        color: black;
+        transition: 0.25s;
+        @include md {
+          font-size: rem-calc(30);
+        }
+
+        @include lg {
+          font-size: rem-calc(25);
+        }
+
+        span {
+          font-weight: 200;
+        }
+      }
+
+      a:hover,
+      a:active {
+        color: $grey;
+      }
 
     }
 
@@ -47,11 +73,11 @@ header {
       justify-content: center;
       grid-area: burger;
       margin-right: -15px;
-      padding: 10px 15px 10px 0;
+      padding: 10px 0 10px 0;
 
       @include md {
         margin-right: -30px;
-        padding: 10px 15px 10px 0;
+        padding: 10px 0 10px 0;
       }
 
       @include lg {

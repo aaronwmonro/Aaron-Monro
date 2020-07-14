@@ -60,15 +60,56 @@
     </div>
         
     </header>
-     <section id="home-page">
+     <section class="grid-container content-spacing" id="about-container">
+             <div>
+                 <aside>
          
-             <section id="home-hero">
+                 </aside>
          
-             </section>
+                 <section id="about-content">
+                     <p class="section-text">
+                         I am a student at Drexel University majoring in Graphic Design, with a minor in Marketing. I have always
+                         been a creative but over the years my love for design has progressed to the point I have chosen to make
+                         it my career path. My passion for design stems from its ability to change and influence the world around
+                         us. With our ever-growing digital world, I believe now more than ever, design is quintessential part of
+                         daily life.
+                     </p>
          
+                     <ul id="about-social">
+                         <li><a href="https://www.instagram.com/aaronmonro.jpg/"><i class="fab fa-instagram"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/aaron-monro-984774186/"><i class="fab fa-linkedin-in"></i></a>
+                         </li>
+                         <li><a href="https://www.behance.net/"><i class="fab fa-behance-square"></i></a></li>
+                         <li><a href="tel:4026619963"><i class="fas fa-phone-square"></i></a></li>
+                     </ul>
+                     <section id="resume-content">
+                         <div>
+                             <a href="img/about/aaron-monro-resume.pdf" download>
+                                 DOWNLOAD RESUME
+                             </a>
+                         </div>
+                     </section>
+                 </section>
          
+             </div>
+         </section>
          
-             <!-- <img src="img/home/home-hero.jpg" alt=""> -->
+         <section class="grid-container content-spacing" id="about-map">
+             <div>
+                 <div id="map">
+                     
+                 </div>
+             </div>
+         </section>
+         
+         <section class="grid-container content-spacing" id="about-social">
+             <div>
+                 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+                 <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+                 <ul class="juicer-feed" data-feed-id="patrickbatemane">
+                     <h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1>
+                 </ul>
+             </div>
          </section>
     <footer class="header-container content-spacing">
                  <div>
@@ -97,14 +138,32 @@
              
                  </div>
              </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkjrX7O7f6tWzIlU85KyFkmd09iAODr7Q&callback=initMap">
+
+// AIzaSyCfpch7D6QQWSYcPlnO5N3JpotasXKQ_bo
+            </script>
     <!-- jQuery -->
-                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                 <!-- Greensock -->
-                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                 <!-- fancyBox -->
-                 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                 <!-- Tiny Slider -->
-                 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-                 <script src="js/scripts-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <!-- fancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/scripts-min.js"></script>
 
 </html>

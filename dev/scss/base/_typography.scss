@@ -27,7 +27,8 @@ p{
     font-weight: 500;
     font-size: rem-calc(25);
     font-style: italic;
-
+    text-decoration: none;
+    color: black;
     @include md{
         font-size: rem-calc(30); 
     }
@@ -37,6 +38,7 @@ p{
     span{
         font-weight: 200;
     }
+    
 }
 
 .section-title{
