@@ -1817,8 +1817,8 @@ footer div #footer-social a:active {
 }
 @media (min-width: 768px) {
   #about-form > div #form-container form {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "name email" "company phone" "mess mess" " . bttn";
+    grid-template-columns: 50% auto;
+    grid-template-areas: "name email" "company phone" "mess mess" " . button";
   }
 }
 #about-form > div #form-container form section {
@@ -1838,7 +1838,7 @@ footer div #footer-social a:active {
   border: none;
   height: 200px;
   width: 100%;
-  padding: 0;
+  padding: 10px 0 0 0;
 }
 @media (min-width: 768px) {
   #about-form > div #form-container form section:nth-child(1) {
@@ -1866,11 +1866,15 @@ footer div #footer-social a:active {
   }
 }
 #about-form > div #form-container form section:nth-child(6) {
-  text-align: right;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: none;
 }
 @media (min-width: 768px) {
   #about-form > div #form-container form section:nth-child(6) {
-    grid-area: bttn;
+    grid-area: button;
   }
 }
 #about-form > div #form-container form section:nth-child(6) button {
