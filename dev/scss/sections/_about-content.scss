@@ -113,3 +113,103 @@
         }
      }
  }
+
+ /* --------------------------
+    About-Form
+ --------------------------*/
+#about-form{
+    background-color: $grey;
+    @include md {
+        display: grid;
+        grid-template-columns: auto 60% auto;
+        grid-template-areas: ". form .";
+    }
+
+    @include lg {
+        grid-template-columns: auto 700px auto;
+    }
+    >div{
+        @include md {
+            grid-area: form;
+        }
+
+        #form-container{
+            form{
+                display: grid;
+                gap: 20px;
+       
+                @include md {
+                   grid-template-columns: repeat(2, 1fr);
+                   grid-template-areas:
+                       "name email"
+                       "company phone"
+                       "mess mess"
+                       " . bttn";
+               }
+       
+               section{
+               
+                   background-color: white;
+                   width: 96%;
+                   padding: 0 2%;
+                   border-radius: 0;
+                   border:  solid black 1px;
+       
+       
+                   input{border-radius: 0;
+                       border: none;
+                       width: 100%;
+                       padding: 4% 0;
+                   }
+       
+                   textarea {
+                       border: none;
+                       height: 200px;
+                       width: 100%;
+                       padding: 0;
+                   }
+               }
+       
+       
+                section:nth-child(1) {
+                   @include md {
+                       grid-area: name;
+                   }
+               }
+       
+               section:nth-child(2) {
+                   @include md {
+                       grid-area: email;
+                   }
+               }
+               section:nth-child(3) {
+                   @include md {
+                       grid-area: company;
+                   }
+               }
+               section:nth-child(4) {
+                   @include md {
+                       grid-area: phone;
+                   }
+               }
+               section:nth-child(5) {
+                   @include md {
+                       grid-area: mess;
+                   }
+               }
+               section:nth-child(6) {
+                   @include md {
+                       grid-area: bttn;
+                   }
+                   text-align: right;
+                   button{
+                       border: none;
+                   }
+               }
+            }
+        }
+
+    }
+    
+}
+ 

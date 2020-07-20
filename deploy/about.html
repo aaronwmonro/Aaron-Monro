@@ -111,6 +111,45 @@
                  </ul>
              </div>
          </section>
+         
+         <section class="grid-container content-spacing" id="about-form">
+             <div>
+                 <!-- <section id="contact-button-section">
+                     <section id="button-container">
+                         <button class="black-button" id="contact-us-btn">CONTACT ME <i class="far fa-ellipsis-v"></i></button>
+         
+                         <section id="contact-options">
+                             <ul>
+                                 <li><a href="mailto:awesleydesign@gmail.com"><i class="far fa-envelope"></i>email</a></li>
+                                 <li><button id="show-form-btn"><i class="fas fa-align-left"></i>Contact Form</button></li>
+                             </ul>
+                         </section>
+                     </section>
+                 </section> -->
+         
+                 <section id="form-container">
+                     <form action="https://formspree.io/mayplvkl" method="POST">
+                         <section>
+                             <input type="text" placeholder="Name" name="Name">
+                         </section>
+                         <section>
+                             <input type="email" placeholder="Email" name="Email">
+                         </section>
+                         <section>
+                             <input type="text" placeholder="Company" name="Company">
+                         </section>
+                         <section>
+                             <input type="tel" placeholder="Phone" name="Phone">
+                         </section>
+                         <section>
+                             <textarea placeholder="Message"></textarea>
+                         </section>
+                             <button class="black-button" type="submit">SEND</button>
+                         </section>
+                     </form>
+                 </section>
+             </div>
+         </section>
     <footer class="header-container content-spacing">
                  <div>
                      <ul id="footer-info">
@@ -139,22 +178,115 @@
                  </div>
              </footer>
 
-    <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-            </script>
+    
+            <script>
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 39.956768, lng: -75.189981},
+                    zoom: 15,
+                    
+                    hide:[{
+                      featureType: "poi.business",
+                      stylers:[{
+                        visibilty: "off"
+                      }]
+
+                    }],
+
+                    hide:[{
+                      featureType: "poi.school",
+                      stylers:[{
+                        visibilty: "off"
+                      }]
+
+                    }],
+
+                    styles: [
+                      {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.fill', stylers: [{color: '#ffffff'}]},
+                      {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{color: '#263c3f'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#6b9a76'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{color: '#38414e'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#212a37'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#9ca5b3'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{color: '#746855'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#1f2835'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#f3d19c'}]
+                      },
+                      {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{color: '#2f3948'}]
+                      },
+                      {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{color: '#17263c'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#515c6d'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#ffffff'}]
+                      }
+                    ]
+                  });
+                }
+              </script>
+              
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkjrX7O7f6tWzIlU85KyFkmd09iAODr7Q&callback=initMap">
-
-// AIzaSyCfpch7D6QQWSYcPlnO5N3JpotasXKQ_bo
             </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

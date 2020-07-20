@@ -9,22 +9,115 @@
      <!-- @import "content/about-content.kit" -->
     <!-- @import "global/footer.kit" -->
 
-    <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-            </script>
+    
+            <script>
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 39.956768, lng: -75.189981},
+                    zoom: 15,
+                    
+                    hide:[{
+                      featureType: "poi.business",
+                      stylers:[{
+                        visibilty: "off"
+                      }]
+
+                    }],
+
+                    hide:[{
+                      featureType: "poi.school",
+                      stylers:[{
+                        visibilty: "off"
+                      }]
+
+                    }],
+
+                    styles: [
+                      {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.fill', stylers: [{color: '#ffffff'}]},
+                      {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{color: '#263c3f'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#6b9a76'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{color: '#38414e'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#212a37'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#9ca5b3'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{color: '#746855'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#1f2835'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#f3d19c'}]
+                      },
+                      {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{color: '#2f3948'}]
+                      },
+                      {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{color: '#17263c'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#515c6d'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#ffffff'}]
+                      }
+                    ]
+                  });
+                }
+              </script>
+              
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkjrX7O7f6tWzIlU85KyFkmd09iAODr7Q&callback=initMap">
-
-// AIzaSyCfpch7D6QQWSYcPlnO5N3JpotasXKQ_bo
             </script>
     <!-- @import "global/scripts.kit" -->
 

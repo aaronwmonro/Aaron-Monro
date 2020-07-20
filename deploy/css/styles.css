@@ -597,6 +597,31 @@ textarea {
   color: #F6F6F6;
 }
 
+.black-button {
+  background-color: black;
+  color: #fff;
+  width: 100px;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .black-button {
+    font-size: 1.25rem;
+    padding: 14px;
+  }
+}
+@media (min-width: 1020px) {
+  .black-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+.black:hover {
+  background-color: #F6F6F6;
+}
+
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #F6F6F6;
 }
@@ -1761,4 +1786,93 @@ footer div #footer-social a:active {
   #about-map > div #map {
     height: 300px;
   }
+}
+
+/* --------------------------
+   About-Form
+--------------------------*/
+#about-form {
+  background-color: #F6F6F6;
+}
+@media (min-width: 768px) {
+  #about-form {
+    display: grid;
+    grid-template-columns: auto 60% auto;
+    grid-template-areas: ". form .";
+  }
+}
+@media (min-width: 992px) {
+  #about-form {
+    grid-template-columns: auto 700px auto;
+  }
+}
+@media (min-width: 768px) {
+  #about-form > div {
+    grid-area: form;
+  }
+}
+#about-form > div #form-container form {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name email" "company phone" "mess mess" " . bttn";
+  }
+}
+#about-form > div #form-container form section {
+  background-color: white;
+  width: 96%;
+  padding: 0 2%;
+  border-radius: 0;
+  border: solid black 1px;
+}
+#about-form > div #form-container form section input {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  padding: 4% 0;
+}
+#about-form > div #form-container form section textarea {
+  border: none;
+  height: 200px;
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(1) {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(2) {
+    grid-area: email;
+  }
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(3) {
+    grid-area: company;
+  }
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(4) {
+    grid-area: phone;
+  }
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(5) {
+    grid-area: mess;
+  }
+}
+#about-form > div #form-container form section:nth-child(6) {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #about-form > div #form-container form section:nth-child(6) {
+    grid-area: bttn;
+  }
+}
+#about-form > div #form-container form section:nth-child(6) button {
+  border: none;
 }
