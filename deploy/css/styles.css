@@ -402,6 +402,25 @@ ul li {
   grid-area: container;
 }
 
+.header-container-2 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 768px) {
+  .header-container-2 {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+@media (min-width: 992px) {
+  .header-container-2 {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+.header-container-2 > div {
+  grid-area: container;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -1826,7 +1845,8 @@ footer div #footer-social a:active {
   width: 96%;
   padding: 0 2%;
   border-radius: 0;
-  border: solid black 1px;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
 }
 #about-form > div #form-container form section input {
   border-radius: 0;

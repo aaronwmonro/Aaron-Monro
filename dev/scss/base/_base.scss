@@ -39,6 +39,20 @@ ul{
     }
 }
 
+.header-container-2{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+
+    @include md{ grid-template-columns: 30px auto 30px;}
+
+    @include lg{ grid-template-columns: 30px auto 30px;}
+
+    >div{
+        grid-area: container;
+    }
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 15px auto 15px;
