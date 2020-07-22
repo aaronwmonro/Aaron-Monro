@@ -5,7 +5,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  @include lg{ background-color: rgba($color: $grey, $alpha: .50);}
+  // @include lg{ background-color: rgba($color: $grey, $alpha: .50);}
 
   div {
     display: grid;
@@ -14,13 +14,13 @@ header {
 
     padding: 10px 0;
 
-    @include lg {
-      padding: 20px 0;
-    }
+    // @include lg {
+    //   padding: 20px 0;
+    // }
 
-    @include lg {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @include lg {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
     #name-container {
       align-items: center;
@@ -35,7 +35,7 @@ header {
         font-style: italic;
         text-decoration: none;
         color: black;
-        transition: 0.25s;
+        transition: 0.8s;
         @include md {
           font-size: rem-calc(30);
         }
@@ -51,18 +51,22 @@ header {
 
       a:hover,
       a:active {
-        color: $grey;
+        color:black;
+        font-size: rem-calc(30);
+        font-style: normal;
+        transition: 0.8s;
+
       }
 
     }
 
-    #myNav {
-      display: none;
+    // #myNav {
+    //   display: none;
 
-      @include lg {
-        display: grid;
-      }
-    }
+    //   @include lg {
+    //     display: grid;
+    //   }
+    // }
 
     #burger-container {
       align-items: center;
@@ -80,9 +84,9 @@ header {
         padding: 10px 0 10px 0;
       }
 
-      @include lg {
-        display: none !important;
-      }
+      // @include lg {
+      //   display: none !important;
+      // }
 
       i {
         cursor: pointer;

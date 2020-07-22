@@ -1,3 +1,28 @@
 /* =============
     Buttons
 ============= */
+.black-button {
+	background-color: black;
+	color: #fff;
+	width: 100px;
+	font-weight: 400;
+	font-size: 1rem;
+	padding: 10px 10px;
+	
+	
+  }
+  @media (min-width: 768px) {
+	.black-button {
+	  font-size: 1.25rem;
+	  padding: 14px ;
+	}
+  }
+  @media (min-width: 1020px) {
+	.black-button {
+	  font-size: 1rem;
+	  padding: 10px;
+	}
+  }
+  .black:hover {
+	background-color: $grey;
+  }

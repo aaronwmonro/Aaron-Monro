@@ -550,72 +550,20 @@ p {
   }
 }
 
+.section-nav {
+  padding: 40px 0 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
 /* =============
     Buttons
 ============= */
-/* =============
-    Forms
-============= */
-[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  box-shadow: none;
-}
-
-[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  box-shadow: none;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-textarea {
-  -webkit-appearance: none;
-}
-
-/* =============
-    Navigation
-============= */
-#myNav ul {
-  align-items: center;
-}
-@media (min-width: 992px) {
-  #myNav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-#myNav ul li {
-  margin-bottom: 10px;
-}
-@media (min-width: 992px) {
-  #myNav ul li {
-    padding-left: 20px;
-    margin-bottom: 0;
-  }
-}
-#myNav ul li h1 {
-  display: none;
-}
-#myNav ul li a:link,
-#myNav ul li a:visited {
-  color: #F6F6F6;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  text-decoration: none;
-  transition: 0.25s;
-  width: 100%;
-}
-@media (min-width: 992px) {
-  #myNav ul li a:link,
-#myNav ul li a:visited {
-    color: black;
-  }
-}
-#myNav ul li a:hover,
-#myNav ul li a:active {
-  color: #F6F6F6;
-}
-
 .black-button {
   background-color: black;
   color: #fff;
@@ -641,6 +589,27 @@ textarea {
   background-color: #F6F6F6;
 }
 
+/* =============
+    Forms
+============= */
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+  box-shadow: none;
+}
+
+[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* =============
+    Navigation
+============= */
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #F6F6F6;
 }
@@ -992,26 +961,11 @@ header {
   width: 100%;
   z-index: 1000;
 }
-@media (min-width: 992px) {
-  header {
-    background-color: rgba(246, 246, 246, 0.5);
-  }
-}
 header div {
   display: grid;
   grid-template-columns: auto 50px;
   grid-template-areas: "logo burger";
   padding: 10px 0;
-}
-@media (min-width: 992px) {
-  header div {
-    padding: 20px 0;
-  }
-}
-@media (min-width: 992px) {
-  header div {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 header div #name-container {
   align-items: center;
@@ -1026,7 +980,7 @@ header div #name-container a:visited {
   font-style: italic;
   text-decoration: none;
   color: black;
-  transition: 0.25s;
+  transition: 0.8s;
 }
 @media (min-width: 768px) {
   header div #name-container a:link,
@@ -1046,15 +1000,10 @@ header div #name-container a:visited span {
 }
 header div #name-container a:hover,
 header div #name-container a:active {
-  color: #F6F6F6;
-}
-header div #myNav {
-  display: none;
-}
-@media (min-width: 992px) {
-  header div #myNav {
-    display: grid;
-  }
+  color: black;
+  font-size: 1.875rem;
+  font-style: normal;
+  transition: 0.8s;
 }
 header div #burger-container {
   align-items: center;
@@ -1071,11 +1020,6 @@ header div #burger-container {
   header div #burger-container {
     margin-right: -30px;
     padding: 10px 0 10px 0;
-  }
-}
-@media (min-width: 992px) {
-  header div #burger-container {
-    display: none !important;
   }
 }
 header div #burger-container i {
