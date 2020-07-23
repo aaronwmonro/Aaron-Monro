@@ -610,6 +610,32 @@ textarea {
 /* =============
     Navigation
 ============= */
+#main-nav {
+  background-color: rgba(246, 246, 246, 0.9);
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 900;
+}
+#main-nav ul li a:link, #main-nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+  transition: 0.8s;
+}
+#main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
+  transition: 0.8s;
+  color: black;
+  font-size: 1.875rem;
+}
+
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #F6F6F6;
 }
@@ -1021,9 +1047,6 @@ header div #burger-container {
     margin-right: -30px;
     padding: 10px 0 10px 0;
   }
-}
-header div #burger-container i {
-  cursor: pointer;
 }
 
 /* =============
