@@ -11,7 +11,6 @@ header {
     display: grid;
     grid-template-columns: auto 50px;
     grid-template-areas: "logo burger";
-
     padding: 10px 0;
 
     // @include lg {
@@ -36,12 +35,13 @@ header {
         text-decoration: none;
         color: black;
         transition: 0.8s;
+
         @include md {
           font-size: rem-calc(30);
         }
 
         @include lg {
-          font-size: rem-calc(25);
+          font-size: rem-calc(30);
         }
 
         span {
@@ -51,7 +51,7 @@ header {
 
       a:hover,
       a:active {
-        color:black;
+        color: black;
         font-size: rem-calc(30);
         font-style: normal;
         transition: 0.8s;
@@ -60,33 +60,31 @@ header {
 
     }
 
-    // #myNav {
-    //   display: none;
-
-    //   @include lg {
-    //     display: grid;
-    //   }
-    // }
 
     #burger-container {
       align-items: center;
-      color: #F6F6F6;
       display: flex;
-      background: black;
-      font-size: rem-calc(29);
-      justify-content: center;
-      grid-area: burger;
-      margin-right: -15px;
-      padding: 10px 0 10px 0;
+      justify-content: flex-end;
 
-      @include md {
-        margin-right: -30px;
-        padding: 10px 0 10px 0;
+      #burger {
+        cursor: pointer;
+        transition: 0.25s;
+
+        #lines {
+          transition: 0.25s;
+          stroke: black !important;
+
+          
+        }
+        
+        &:hover{
+          #lines{
+              stroke: white !important;
+          }
+      }
+        
       }
 
-      // @include lg {
-      //   display: none !important;
-      // }
 
     }
 

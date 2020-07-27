@@ -6,7 +6,7 @@
 #main-nav{
 	background-color: rgba($color: $grey, $alpha: .90);
     place-items: center;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     position: fixed;
