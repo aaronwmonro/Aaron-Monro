@@ -1,12 +1,18 @@
 var burgerAnimationTimeLine = gsap.timeline({paused:true});
-
+var burgerAnimateSpeed = 0.25;
 gsap.set(".lines",{transformOrigin:"center"});
 
-burgerAnimationTimeLine.to("#top-line",{duration:0.5,rotation:45, y:10, stroke: "#000"},"burgerStart")
-                    .to("#bottom-line",{duration:0.5,rotation:-45, y:-50, stroke: "#000"},"burgerStart");
+
+
+burgerAnimationTimeLine.to("#top-line",{duration:burgerAnimateSpeed,rotation:45, y:-8, x:8, stroke: "#000"}, "burgerToX")
+                    .to("#bottom-line",{duration:burgerAnimateSpeed,rotation:-45, y:10, x:8, stroke: "#000"}, "burgerToX")
+                    .to("#right-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:-45, y:7, x:1}, "burgerToX")
+                        .to("#left-arrow",{duration: burgerAnimateSpeed, alpha:0, rotation:45, y:9, x:27}, "burgerToX")
+                        .to("#circle",{duration: burgerAnimateSpeed, alpha:1, rotation:0, y:0, x:0}, "burgerToX");
 
 
 
+// burgerAnimationTimeLine.to("#burger")
 
 function animateBurger(){
     

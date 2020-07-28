@@ -1044,6 +1044,9 @@ header div #burger-container #burger #lines {
   transition: 0.25s;
   stroke: black !important;
 }
+header div #burger-container #burger #circle {
+  opacity: 0;
+}
 header div #burger-container #burger:hover #lines {
   stroke: white !important;
 }
