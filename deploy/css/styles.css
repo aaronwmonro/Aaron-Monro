@@ -1038,17 +1038,12 @@ header div #burger-container {
 }
 header div #burger-container #burger {
   cursor: pointer;
-  transition: 0.25s;
 }
-header div #burger-container #burger #lines {
-  transition: 0.25s;
-  stroke: black !important;
+header div #burger-container #burger .lines {
+  opacity: 0;
 }
 header div #burger-container #burger #circle {
   opacity: 0;
-}
-header div #burger-container #burger:hover #lines {
-  stroke: white !important;
 }
 
 /* =============
@@ -1141,13 +1136,18 @@ footer div #footer-social a:active {
 /* =============
     Index Content
 ============= */
-#home-page #home-hero {
-  background-image: url("../img/home/home-hero.jpg");
+#home-slides > div .my-slider-1 div {
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+}
+#home-slides > div .my-slider-1 div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#home-slides > div .tns-controls [aria-controls] {
+  background-color: #fff;
+  display: none;
 }
 
 #personal-gallery {

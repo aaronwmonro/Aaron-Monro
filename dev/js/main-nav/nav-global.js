@@ -10,28 +10,28 @@ var mainNavTimeline = gsap.timeline({
     paused: true
 })
 mainNavTimeline.to("#main-nav", {
-    duration: 0.75,
-    x: -0
-})
+    duration: 0.75,x: -0})
+
+// reset the lines 
+gsap.set(".burger-lines", {
+    transformOrigin: "center"
+});
 
 function hideShowMainNav() {
-    // console.log("hide or show nav");
-    // //toggles the css display property
-    // $("#main-nav").toggle();
+    console.log("show the menu");
+    console.log(canYouSeeTheMenu + " can you see the menu value");
 
     if (canYouSeeTheMenu === false) {
-        console.log("show the menu");
         canYouSeeTheMenu = true;
         // turn burger into x
-        animateBurger();
+        burgerAnimationTimeLine.play("rightArrowToX");
 
         mainNavTimeline.play();
     } else {
-        console.log("hide the menu");
-
+        console.log("burger click");
+        burgerAnimationTimeLine.play("leftArrowToBurger");
         canYouSeeTheMenu = false;
         // turn x into burger
-        animateBurger();
 
         mainNavTimeline.reverse();
     }

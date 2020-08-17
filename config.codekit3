@@ -411,15 +411,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/home/home-hero.jpg": {
+	"/deploy/img/home/home-slide-1.jpg": {
 		"ft": 16384,
 		"iS": 997173,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/home/home-hero.jpg",
+		"oAP": "/deploy/img/home/home-slide-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/home/home-slide-2.jpg": {
+		"ft": 16384,
+		"iS": 6429950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-slide-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/personal/personal-1.jpg": {
@@ -2514,7 +2525,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns, gsap",
+	"jsCheckerReservedNamesString": "tns, gsap, ScrollTrigger",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

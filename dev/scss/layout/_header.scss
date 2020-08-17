@@ -68,12 +68,11 @@ header {
 
       #burger {
         cursor: pointer;
-        transition: 0.25s;
+        // transition: 0.25s;
 
-        #lines {
-          transition: 0.25s;
-          stroke: black !important;
-
+        .lines {
+          // transition: 0.25s;
+          opacity: 0.0;
           
         }
         #circle{
@@ -81,11 +80,11 @@ header {
         }
 
         
-        &:hover{
-          #lines{
-              stroke: white !important;
-          }
-      }
+      //   &:hover{
+      //     #lines{
+      //         stroke: white !important;
+      //     }
+      // }
         
       }
 

@@ -1,18 +1,41 @@
 /* =============
     Index Content
 ============= */
-#home-page {
 
 
-    #home-hero {
+#home-slides {
+  
+    
 
-        background-image: url('../img/home/home-hero.jpg');
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
+        >div{
+            .my-slider-1 {
 
+                div {
+                    height: 100vh;
+    
+    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
 
-    }
+            .tns-controls [aria-controls] {
+            
+                background-color: $grey;
+                display: none;
+    
+            }
+        }
+
+        // .tns-controls [aria-controls] {
+            
+        //     background-color: $grey;
+        //     display: block;
+
+        // }
+    
 }

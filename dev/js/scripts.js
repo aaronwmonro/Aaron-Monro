@@ -4,7 +4,7 @@
 // @codekit-prepend "main-nav/burger-click.js";
 // @codekit-prepend "main-nav/main-nav-click.js";
 
-
+gsap.registerPlugin( ScrollTrigger);
 
 // @codekit-prepend "fancyBox.js";
 // @codekit-prepend "tinySlider.js";
