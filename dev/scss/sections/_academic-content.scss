@@ -5,7 +5,7 @@
     Academic-Hero
  --------------------------*/
 #academic-hero {
-
+    z-index: 900;
     background-image: url('../img/academic/academic-hero.jpg');
     height: 100vh;
     background-position: center;
@@ -19,12 +19,14 @@
     PII-Hero
  --------------------------*/
 #pii-hero {
+    box-shadow: -10px 0px 100px black;
+    z-index: 1000;
     background-color: $blue;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
     @include lg {
         height: 100vh;
     }
@@ -45,7 +47,9 @@
  --------------------------*/
 #pii-container {
     background-color: $grey;
-
+    position: relative;
+    z-index: 1100;
+    box-shadow: -10px 0px 100px black;
     >div {
         display: grid;
         grid-template-columns: 7.5% auto;
@@ -167,6 +171,8 @@
         }
 
     }
+
+    
 }
 
 /* --------------------------
@@ -174,7 +180,14 @@
  --------------------------*/
  #pii-slides {
     background-color: $grey;
-
+    position: relative;
+    z-index: 1200;
+    
+        padding-bottom: 60px;
+        @include md{
+            padding-bottom: 100px;
+        }
+    
     >div {
         p{
             display: flex;
@@ -223,6 +236,7 @@
             background: black;
             border-radius: 0;
 
+
         }
     }
 }
@@ -235,13 +249,13 @@
     margin-top: -10px;
     >div {
         background-image: url('../img/academic/pii-hero.jpg');
-        height: 40vh;
+        height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
 
         @include md {
-            height: 50vh;
+            height: 100vh;
         }
 
         @include lg {
@@ -255,12 +269,14 @@
     WNDR-Hero
  --------------------------*/
 #wndr-hero {
+    position: relative;
+    z-index: 1200;
     background-color: black;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    box-shadow: -10px 0px 100px black;
 
     @include lg {
         height: 100vh;
@@ -286,7 +302,9 @@
  --------------------------*/
 #wndr-container {
     background-color: $grey;
-
+    position: relative;
+    z-index: 1300;
+    box-shadow: -10px 0px 100px black;
     >div {
         display: grid;
         grid-template-columns: auto 7.5%;
@@ -425,7 +443,8 @@
  --------------------------*/
 #wndr-slides {
     background-color: $grey;
-
+    position: relative;
+    z-index: 1400;
     >div {
 
         .my-slider {

@@ -9,18 +9,45 @@
 
         >div{
             .my-slider-1 {
+                background-color: $grey;
 
                 div {
                     height: 100vh;
     
     
                     img {
-                        height: 100%;
+                        height: 100vh;
                         width: 100%;
                         object-fit: cover;
                         object-position: center;
                     }
+
+                 
+
+                    #home-slide-3{
+                        object-position: center;
+
+                        @include md{
+                            object-position: center;
+                        }
+
+                        @include lg{
+                            object-position: center -110px;
+                        }
+                    }
+
                 }
+
+                
+            }
+            #tns1-ow{
+                background-color: $grey;
+                button{
+                    
+                }
+            }
+            .tns-nav{
+                background-color: $grey;
             }
 
             .tns-controls [aria-controls] {

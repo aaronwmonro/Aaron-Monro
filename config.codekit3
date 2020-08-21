@@ -433,6 +433,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/home/home-slide-3.jpg": {
+		"ft": 16384,
+		"iS": 3014656,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-slide-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/personal/personal-1.jpg": {
 		"ft": 16384,
 		"iS": 1361787,
@@ -528,6 +539,28 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 0
+		},
+	"/deploy/js/gsap/DrawSVGPlugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/gsap/DrawSVGPlugin.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/deploy/js/gsap/MorphSVGPlugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/gsap/MorphSVGPlugin.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/deploy/js/scripts-min.js": {
 		"bF": 0,
@@ -726,6 +759,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/personal.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/personal-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
@@ -734,6 +778,39 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger-about.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger-about-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger-academic.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger-academic-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger-nav.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger-nav-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -2525,7 +2602,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns, gsap, ScrollTrigger",
+	"jsCheckerReservedNamesString": "tns, gsap, ScrollTrigger, MorphSVGPlugin, DrawSVGPlugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

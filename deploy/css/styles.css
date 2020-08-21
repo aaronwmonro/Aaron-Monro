@@ -985,7 +985,7 @@ pre[class*=language-] {
 header {
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 3000;
 }
 header div {
   display: grid;
@@ -1136,17 +1136,39 @@ footer div #footer-social a:active {
 /* =============
     Index Content
 ============= */
+#home-slides > div .my-slider-1 {
+  background-color: #F6F6F6;
+}
 #home-slides > div .my-slider-1 div {
   height: 100vh;
 }
 #home-slides > div .my-slider-1 div img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
+#home-slides > div .my-slider-1 div #home-slide-3 {
+  object-position: center;
+}
+@media (min-width: 768px) {
+  #home-slides > div .my-slider-1 div #home-slide-3 {
+    object-position: center;
+  }
+}
+@media (min-width: 992px) {
+  #home-slides > div .my-slider-1 div #home-slide-3 {
+    object-position: center -110px;
+  }
+}
+#home-slides > div #tns1-ow {
+  background-color: #F6F6F6;
+}
+#home-slides > div .tns-nav {
+  background-color: #F6F6F6;
+}
 #home-slides > div .tns-controls [aria-controls] {
-  background-color: #fff;
+  background-color: #F6F6F6;
   display: none;
 }
 
@@ -1258,6 +1280,7 @@ footer div #footer-social a:active {
     Academic-Hero
  --------------------------*/
 #academic-hero {
+  z-index: 900;
   background-image: url("../img/academic/academic-hero.jpg");
   height: 100vh;
   background-position: center;
@@ -1270,11 +1293,14 @@ footer div #footer-social a:active {
     PII-Hero
  --------------------------*/
 #pii-hero {
+  box-shadow: -10px 0px 100px black;
+  z-index: 1000;
   background-color: #1D639B;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 @media (min-width: 992px) {
   #pii-hero {
@@ -1295,6 +1321,9 @@ footer div #footer-social a:active {
  --------------------------*/
 #pii-container {
   background-color: #F6F6F6;
+  position: relative;
+  z-index: 1100;
+  box-shadow: -10px 0px 100px black;
 }
 #pii-container > div {
   display: grid;
@@ -1408,6 +1437,14 @@ footer div #footer-social a:active {
  --------------------------*/
 #pii-slides {
   background-color: #F6F6F6;
+  position: relative;
+  z-index: 1200;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  #pii-slides {
+    padding-bottom: 100px;
+  }
 }
 #pii-slides > div p {
   display: flex;
@@ -1463,14 +1500,14 @@ footer div #footer-social a:active {
 }
 #pii-hero-2 > div {
   background-image: url("../img/academic/pii-hero.jpg");
-  height: 40vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   #pii-hero-2 > div {
-    height: 50vh;
+    height: 100vh;
   }
 }
 @media (min-width: 992px) {
@@ -1483,11 +1520,14 @@ footer div #footer-social a:active {
     WNDR-Hero
  --------------------------*/
 #wndr-hero {
+  position: relative;
+  z-index: 1200;
   background-color: black;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: -10px 0px 100px black;
 }
 @media (min-width: 992px) {
   #wndr-hero {
@@ -1513,6 +1553,9 @@ footer div #footer-social a:active {
  --------------------------*/
 #wndr-container {
   background-color: #F6F6F6;
+  position: relative;
+  z-index: 1300;
+  box-shadow: -10px 0px 100px black;
 }
 #wndr-container > div {
   display: grid;
@@ -1633,6 +1676,8 @@ footer div #footer-social a:active {
  --------------------------*/
 #wndr-slides {
   background-color: #F6F6F6;
+  position: relative;
+  z-index: 1400;
 }
 #wndr-slides > div .my-slider div {
   height: 300px;

@@ -24,7 +24,7 @@
 <body>
 
     <header class="header-container-2">
-    <div>
+    <div id="header-an">
     
         <section id="name-container" >
             <a href="index.html" class="name-logo">AARON <span>MONRO</span></a>
@@ -89,7 +89,7 @@
              
              </section>
              
-             <section id="pii-hero">
+             <section id="pii-hero" class="hero-pinning">
                  <section id="pii-content">
                      <img src="img/academic/pii.svg" alt="pii">
                  </section>
@@ -107,10 +107,10 @@
                      </section>
              
                      <section id="pii-content">
-                         <h1 class="section-title">
+                         <h1 class="section-title" id="pii-title">
                              PII <span>GALLERY</span>
                          </h1>
-                         <p class="section-text">
+                         <p class="section-text" id="pii-text">
                              Philadelphia International Institute, better known as PII. Is an Eastern European and American
                              Contemporary Gallery that displays predominantly Modern Art. It is located in the quiet neighborhood of
                              Old City in Philadelphia, PA. The gallery is operated and owned by Margaret Berczynski. The gallery
@@ -130,7 +130,7 @@
              </section>
              
              <section class="content-spacing" id="pii-slides">
-                 <div>
+                 <div id="logo-slides">
                      <p class="section-text">LOGO  <span>DESIGN PROCESS</span></p>
                      <section class="my-slider-2">
                          <div><img src="img/academic/process-2.svg" alt="slide 1"></div>
@@ -145,7 +145,7 @@
                  </div>
              </section>
              
-             <section class="content-spacing" id="pii-hero-2">
+             <section id="pii-hero-2">
                  <div>
              
                  </div>
@@ -167,10 +167,10 @@
                          <div id="wndr-o"></div>
                      </section>
                      <section id="wndr-content">
-                         <h1 class="section-title">
+                         <h1 class="section-title" id="wndr-title">
                              WNDR: <span>Travel Magazine</span>
                          </h1>
-                         <p class="section-text">
+                         <p class="section-text" id="wndr-text">
                              Type WNDR is a young adult travel magazine. It is a modern approach on the seemingly repetitiveness of
                              travel magazines. With limitations on visual stimulation you are forced to engage more with the literary
                              elements of the magazine. This unbalanced approach to imagery and literature allows for the reader to be
@@ -181,7 +181,7 @@
              
              
                      <section id="wndr-process">
-                         <ul>
+                         <ul id="wndr-process-container">
                              <li>
                                  <img src="img/academic/wndr-process-1.svg" alt="wndr">
                              </li>
@@ -247,6 +247,10 @@
                  </footer>
     <!-- jQuery -->
                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                     <!-- Greensock MorphSVG -->
+                     <script src="js/gsap/MorphSVGPlugin.min.js"></script>
+                     <!-- Greensock DrawSVG -->
+                     <script src="js/gsap/DrawSVGPlugin.min.js"></script>
                      <!-- Scrool Trigger -->
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
                      <!-- Greensock -->

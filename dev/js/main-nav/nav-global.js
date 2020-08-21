@@ -45,3 +45,17 @@ window.onclick = function (event) {
         hideShowMainNav();
     }
 }
+
+function reportWindowSize() {
+    console.log("test");
+    if (canYouSeeTheMenu === false) {
+        console.log("can't see the main nav");
+        console.log($("#main-nav").outerWidth());
+        navWidth = $("#main-nav").outerWidth();
+        gsap.set("#main-nav", {
+            y: -navWidth
+        });
+    }
+}
+
+window.addEventListener('resize', reportWindowSize);
