@@ -532,6 +532,37 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/professional/hero.jpg": {
+		"ft": 16384,
+		"iS": 3627393,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/professional/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/professional/zen-full.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/professional/zen-full.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/professional/zen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/professional/zen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -579,6 +610,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/personal.html",
+		"oF": 0
+		},
+	"/deploy/professional.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/professional.html",
 		"oF": 0
 		},
 	"/deploy/template.html": {
@@ -636,6 +675,14 @@
 		"oA": 1,
 		"oAP": "/dev/content/personal-content.html",
 		"oF": 0
+		},
+	"/dev/content/professional-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/professional-content.html",
+		"oF": 1
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -814,6 +861,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/scroll-trigger-professional.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger-professional-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/tinySlider.js": {
 		"bF": 0,
 		"ft": 64,
@@ -831,6 +889,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/personal.html",
+		"oF": 2
+		},
+	"/dev/professional.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/professional.html",
 		"oF": 2
 		},
 	"/dev/scss/base/_base.scss": {
@@ -1037,6 +1103,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_index-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_professional-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_professional-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

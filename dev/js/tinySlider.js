@@ -39,6 +39,37 @@ if(mySlider2.length > 0){
 });
 }
 
+var mySlider4 = document.getElementsByClassName('my-slider-4');
+if(mySlider4.length > 0){
+  tns({
+    container: '.my-slider-4',
+    items: 1,
+    gutter: 15,
+    edgePadding: 50,
+    controls: false,
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+     responsive: {
+          "350": {
+            "items": 1
+          },
+          "768": {
+            "items": 3,
+            gutter:50
+          },
+          "1040": {
+            "items": 4,
+            gutter:100
+          }
+    },
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayPosition: "bottom", 
+    swipeAngle: false,
+    speed: 2000
+});
+}
+
 
 tns({
   container: '.my-slider-1',

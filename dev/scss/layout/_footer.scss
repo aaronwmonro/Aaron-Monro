@@ -3,8 +3,8 @@
 ============= */
 footer {
     background: $grey;
-
-    z-index: 1000;
+position: relative;
+    z-index: 2300;
 margin: -10px 0;
     div {
         display: grid;

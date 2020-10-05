@@ -1051,7 +1051,8 @@ header div #burger-container #burger #circle {
 ============= */
 footer {
   background: #F6F6F6;
-  z-index: 1000;
+  position: relative;
+  z-index: 2300;
   margin: -10px 0;
 }
 footer div {
@@ -1913,4 +1914,233 @@ footer div #footer-social a:active {
 }
 #about-form > div #form-container form section:nth-child(6) button {
   border: none;
+}
+
+/* =============
+    Academic Content
+============= */
+/* --------------------------
+    Academic-Hero
+ --------------------------*/
+#professional-hero {
+  z-index: 900;
+  background-image: url("../img/professional/hero.jpg");
+  height: 100vh;
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #professional-hero {
+    background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  #professional-hero {
+    background-position: center -250px;
+  }
+}
+
+/* --------------------------
+    Zen-Hero
+ --------------------------*/
+#zen-hero {
+  box-shadow: -10px 0px 100px black;
+  z-index: 1000;
+  background-color: #015336;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 992px) {
+  #zen-hero {
+    height: 100vh;
+  }
+}
+#zen-hero #zen-content img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  #zen-hero #zen-content img {
+    width: 300px;
+  }
+}
+
+/* --------------------------
+    Zen-Content
+ --------------------------*/
+#zen-container {
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1100;
+  box-shadow: -10px 0px 100px black;
+  padding-bottom: 10px;
+}
+#zen-container > div {
+  display: grid;
+  grid-template-columns: 7.5% auto;
+  gap: 20px;
+  grid-template-areas: "colors text" "mock mock";
+}
+@media (min-width: 768px) {
+  #zen-container > div {
+    grid-template-columns: 7.5% 50% auto;
+    gap: 50px;
+    grid-template-areas: "colors text mock";
+  }
+}
+@media (min-width: 992px) {
+  #zen-container > div {
+    grid-template-columns: 25% 7.5% auto;
+    gap: 70px;
+    grid-template-areas: "mock colors text";
+  }
+}
+#zen-container > div #zen-content {
+  grid-area: text;
+  align-items: center;
+  padding: 30px 0;
+}
+#zen-container > div #zen-content h1 {
+  color: #015336;
+}
+@media (min-width: 768px) {
+  #zen-container > div #zen-content {
+    padding: 100px 0;
+  }
+}
+#zen-container > div #zen-img-container {
+  grid-area: mock;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  #zen-container > div #zen-img-container {
+    padding-top: 0;
+  }
+}
+#zen-container > div #zen-img-container img {
+  width: 70%;
+}
+@media (min-width: 768px) {
+  #zen-container > div #zen-img-container img {
+    width: auto;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  #zen-container > div #zen-img-container img {
+    width: 100%;
+  }
+}
+#zen-container > div #colors-zen {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "blue" "dark" "green" "yellow" "orange";
+  gap: 15px;
+  grid-area: colors;
+}
+@media (min-width: 768px) {
+  #zen-container > div #colors-zen {
+    gap: 20px;
+  }
+}
+#zen-container > div #colors-zen div {
+  width: auto;
+  height: auto;
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  #zen-container > div #colors-zen div {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 992px) {
+  #zen-container > div #colors-zen div {
+    margin-left: 0;
+  }
+}
+#zen-container > div #colors-zen #blue-zen {
+  grid-area: blue;
+  background-color: #015336;
+}
+#zen-container > div #colors-zen #dark-blue-zen {
+  grid-area: dark;
+  background-color: #20686c;
+}
+#zen-container > div #colors-zen #green-zen {
+  grid-area: green;
+  background-color: #6bc4a6;
+}
+#zen-container > div #colors-zen #yellow-zen {
+  grid-area: yellow;
+  background-color: #f8982d;
+}
+#zen-container > div #colors-zen #orange-zen {
+  grid-area: orange;
+  background-color: #bc4f07;
+}
+
+/* --------------------------
+    Zen-slider
+ --------------------------*/
+#zen-slides {
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1200;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  #zen-slides {
+    padding-bottom: 100px;
+  }
+}
+#zen-slides > div p {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #015336;
+}
+#zen-slides > div p span {
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #zen-slides > div p {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #zen-slides > div p {
+    padding-bottom: 40px;
+  }
+}
+#zen-slides > div .my-slider-4 div {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #zen-slides > div .my-slider-4 div {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #zen-slides > div .my-slider-4 div {
+    height: 250px;
+  }
+}
+#zen-slides > div .my-slider-4 div img {
+  height: 100%;
+  width: 100%;
+  object-fit: auto;
+  object-position: center;
+}
+#zen-slides > div .tns-controls [aria-controls] {
+  color: #F6F6F6;
+  background: black;
+  border-radius: 0;
 }

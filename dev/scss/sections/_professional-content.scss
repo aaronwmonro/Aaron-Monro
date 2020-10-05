@@ -1,0 +1,252 @@
+/* =============
+    Academic Content
+============= */
+/* --------------------------
+    Academic-Hero
+ --------------------------*/
+ #professional-hero {
+    z-index: 900;
+    background-image: url('../img/professional/hero.jpg');
+    height: 100vh;
+    background-position: center -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    @include md{
+        background-position: center 
+    }
+
+    @include lg{
+        background-position: center -250px;
+    }
+
+}
+
+/* --------------------------
+    Zen-Hero
+ --------------------------*/
+#zen-hero {
+    box-shadow: -10px 0px 100px black;
+    z-index: 1000;
+    background-color: #015336;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include lg {
+        height: 100vh;
+    }
+
+    #zen-content {
+        img {
+            width: 200px;
+
+            @include md {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* --------------------------
+    Zen-Content
+ --------------------------*/
+#zen-container {
+    background-color: $grey;
+    position: relative;
+    z-index: 1100;
+    box-shadow: -10px 0px 100px black;
+    padding-bottom: 10px;
+    >div {
+        display: grid;
+        grid-template-columns: 7.5% auto;
+        gap: 20px;
+        grid-template-areas: "colors text"
+            "mock mock";
+
+        @include md {
+            grid-template-columns: 7.5% 50% auto;
+            gap: 50px;
+            grid-template-areas: "colors text mock"
+            ;
+        }
+
+        @include lg {
+            grid-template-columns: 25% 7.5% auto;
+            gap: 70px;
+            grid-template-areas: "mock colors text"
+
+            ;
+        }
+
+        #zen-content {
+            grid-area: text;
+            align-items: center;
+            padding: 30px 0;
+
+            h1 {
+                color:#015336;
+            }
+
+            @include md {
+                padding: 100px 0;
+            }
+        }
+
+        #zen-img-container {
+            grid-area: mock;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+
+            @include md {
+                padding-top: 0;
+            }
+
+            img {
+                width: 70%;
+               
+                
+                @include md {
+                    width: auto;
+                    height: auto;
+                }
+
+                @include lg {
+                    width: 100%;
+
+                }
+
+            }
+        }
+
+        #colors-zen {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: "blue"
+                "dark"
+                "green"
+                "yellow"
+                "orange";
+            gap: 15px;
+            grid-area: colors;
+
+            @include md {
+                gap: 20px;
+            }
+
+            div {
+                width: auto;
+                height: auto;
+                margin-left: -20px;
+
+                @include md {
+                    margin-left: -30px;
+                }
+
+                @include lg {
+                    margin-left: 0;
+
+                }
+            }
+
+            #blue-zen {
+                grid-area: blue;
+                background-color: #015336;
+            }
+
+            #dark-blue-zen {
+                grid-area: dark;
+                background-color:#20686c;
+            }
+
+            #green-zen {
+                grid-area: green;
+                background-color: #6bc4a6;
+            }
+
+            #yellow-zen {
+                grid-area: yellow;
+                background-color: #f8982d;
+            }
+
+            #orange-zen {
+                grid-area: orange;
+                background-color: #bc4f07;
+            }
+
+        }
+
+    }
+
+    
+}
+
+/* --------------------------
+    Zen-slider
+ --------------------------*/
+ #zen-slides {
+    background-color: $grey;
+    position: relative;
+    z-index: 1200;
+    
+        padding-bottom: 60px;
+        @include md{
+            padding-bottom: 100px;
+        }
+    
+    >div {
+        p{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            padding-bottom: 20px;
+            color: #015336;
+
+            span{
+                font-weight: 300;
+            }
+
+            @include md{
+                padding-bottom: 30px;
+            }
+            @include md{
+                padding-bottom: 40px;
+            }
+        }
+        .my-slider-4 {
+
+            div {
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 250px;
+                }
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: auto;
+                    object-position: center;
+                  
+                    
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $grey;
+            background: black;
+            border-radius: 0;
+
+
+        }
+    }
+}

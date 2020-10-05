@@ -11,6 +11,7 @@ gsap.registerPlugin( MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin );
 // @codekit-prepend "scroll-trigger-academic.js";
 // @codekit-prepend "scroll-trigger-about.js";
 // @codekit-prepend "scroll-trigger-nav.js";
+// @codekit-prepend "scroll-trigger-professional.js";
 // @codekit-prepend "personal.js";
 // @codekit-prepend "fancyBox.js";
 // @codekit-prepend "tinySlider.js";
