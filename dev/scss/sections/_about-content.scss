@@ -5,29 +5,43 @@
     About-Information
  --------------------------*/
  #about-container{
+     background-color: white;
+overflow: hidden;
      >div{
          padding-top: 40px;
-        @include md{display: grid;
-            grid-template-columns: 50% auto;
-        grid-template-areas: "head content"
-        }
+       
 
         @include lg{
-            margin: 0 100px;
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "head content";
+            // margin: 0 100px;
+            height: 100vh;
         }
 
-        aside{
-            background-image: url(../img/about/head-shot.jpg);
-            height: 40vh;
-            background-position: center;
-            background-size: cover;
-         
-            @include md{
-                height: auto;
-                margin: 0;
-            }
-            @include lg{
-                height: 60vh;
+        #about-img-container{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: head;
+                margin-right: 40px;
+               
+                
+            #about-pic{
+                
+                height: 40vh;
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+               
+                @include md{width:90vw ;
+                    
+                   
+                }
+                @include lg{ 
+                    height: 60vh;
+                    width: 100%;
+                }
             }
         }
 
@@ -45,6 +59,10 @@
                     padding: 0;
                 }
             }
+            @include lg{
+                border-left: black solid 1px;
+                margin: 20vh 0;
+            }
             #resume-content{
                 grid-area: res;
                 display: flex;
@@ -52,24 +70,87 @@
                 align-items: center;
                 padding-top: 20px;
 
-    
-                div{ background-color: black;
+                svg{
                     width: 250px;
-                    text-align: center;
-                    padding: 20px 0;
+
+                    #resume-button-container{
+                        #resume-button{
+
+                            #yellow-rectangle{
+                           opacity: 0;
+                            }
+                            #download{
+                                visibility: hidden;
+                            }
+
+                            #check{
+                                visibility: hidden;
+                            }
+
+
+                        }
+                    }
+
+
+
                 }
-                    a:link,
-                    a:visited {
-                        color: $grey;
-                        font-size: rem-calc(18);
-                        transition: 0.25s;
-                        text-decoration: none;
-                    }
+                // a:link,
+                //     a:visited {
+                //         svg{
+                //             width: 250px;
+
+                //             #resume-button-container{
+                //                 #resume-button{
+
+                //                     #yellow-rectangle{
+                //                     display: none;
+                //                     }
+                //                     #download{
+                //                         visibility: hidden;
+                //                     }
+
+                //                     #check{
+                //                         display: none;
+                //                     }
+
+
+                //                 }
+                //             }
+
+
+
+                //         }
+                       
+                //     }
         
-                    a:hover,
-                    a:active {
-                        color: black;
-                    }
+                //     a:hover,
+                //     a:active { div{
+                //         // border-radius: 0;
+                     
+                //     }
+                //     }
+
+    
+                // div{ background-color: black;
+                //     width: 250px;
+                //     text-align: center;
+                //     padding: 10px 0;
+                //     border-radius: 30px;
+                // }
+                    // a:link,
+                    // a:visited {
+                    //     color: white;
+                    //     font-size: rem-calc(25);
+                    //     transition: 0.25s;
+                    //     text-decoration: none;
+                    //     font-family: 'Playfair Display', serif;
+                    //     font-weight: 800;
+                    // }
+        
+                    // a:hover,
+                    // a:active {border-radius: 30px;
+                    //     color: $grey;
+                    // }
             }
             #about-social{
                 grid-area: social;
@@ -105,7 +186,7 @@
         #map{
             width: 100%;
             height: 400px;
-            background-color:$grey;
+            // background-color:$grey;
 
             @include md{
                 height: 300px;
@@ -117,8 +198,8 @@
  /* --------------------------
     About-Form
  --------------------------*/
-#about-form{
-    background-color: $grey;
+#about-form{background-color: white;
+    // background-color: $grey;
     @include md {
         display: grid;
         grid-template-columns: auto 60% auto;
@@ -132,7 +213,10 @@
         @include md {
             grid-area: form;
         }
-
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
         #form-container{
             form{
                 display: grid;
@@ -153,8 +237,8 @@
                    width: 96%;
                    padding: 0 2%;
                    border-radius: 0;
-                   border-bottom:  solid black 1px;
-                   border-right:  solid black 1px;
+                   border:  solid black 1px;
+                  
        
                    input{border-radius: 0;
                        border: none;
@@ -202,7 +286,7 @@
                    @include md {
                        grid-area: button;
                    }
-                   background-color: $grey;
+                   background-color: white;
                    display: flex;
                    justify-content: flex-end;
                    align-items: flex-end;

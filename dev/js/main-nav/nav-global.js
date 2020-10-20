@@ -1,4 +1,11 @@
-var canYouSeeTheMenu = false;
+import $ from "jquery";
+import { gsap } from "gsap";
+
+import { burgerAnimationTimeLine } from "./burger-animation";
+
+
+
+export var canYouSeeTheMenu = false;
 
 var navWidth = $("#main-nav").outerWidth();
 //move the main nav off screen ( this is moving the main-nav on the Y axis )
@@ -17,7 +24,7 @@ gsap.set(".burger-lines", {
     transformOrigin: "center"
 });
 
-function hideShowMainNav() {
+export function hideShowMainNav() {
     console.log("show the menu");
     console.log(canYouSeeTheMenu + " can you see the menu value");
 
@@ -59,3 +66,4 @@ function reportWindowSize() {
 }
 
 window.addEventListener('resize', reportWindowSize);
+

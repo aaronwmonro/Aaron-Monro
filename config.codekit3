@@ -35,6 +35,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/illustrations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/illustrations.html",
+		"oF": 0
+		},
 	"/deploy/img/about/aaron-monro-resume.pdf": {
 		"cB": 0,
 		"ft": 8192,
@@ -411,6 +419,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/home/branding-home-img.jpg": {
+		"ft": 16384,
+		"iS": 2760943,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/branding-home-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/home/home-slide-1.jpg": {
 		"ft": 16384,
 		"iS": 997173,
@@ -444,92 +463,290 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/personal/personal-1.jpg": {
-		"ft": 16384,
-		"iS": 1361787,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/personal/personal-2.jpg": {
-		"ft": 16384,
-		"iS": 97583,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/personal/personal-3.jpg": {
-		"ft": 16384,
-		"iS": 89601,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/personal/personal-4.jpg": {
-		"ft": 16384,
-		"iS": 66275,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/personal/personal-5.jpg": {
+	"/deploy/img/home/il-home-img.jpg": {
 		"ft": 16384,
 		"iS": 1026297,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-5.jpg",
+		"oAP": "/deploy/img/home/il-home-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/personal/personal-6.jpg": {
+	"/deploy/img/home/pub-home-img.jpg": {
 		"ft": 16384,
-		"iS": 105739,
+		"iS": 1350209,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-6.jpg",
+		"oAP": "/deploy/img/home/pub-home-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/personal/personal-7.jpg": {
-		"ft": 16384,
-		"iS": 699254,
-		"jF": 0,
+	"/deploy/img/home/web-home-img.png": {
+		"ft": 32768,
+		"iS": 4921202,
 		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-7.jpg",
+		"oAP": "/deploy/img/home/web-home-img.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/personal/personal-8.jpg": {
+	"/deploy/img/illustrations/illustration-1.jpg": {
 		"ft": 16384,
-		"iS": 671142,
+		"iS": 1225023,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/personal/personal-8.jpg",
+		"oAP": "/deploy/img/illustrations/illustration-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-10.jpg": {
+		"ft": 16384,
+		"iS": 2512690,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-11.jpg": {
+		"ft": 16384,
+		"iS": 472210,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-12.jpg": {
+		"ft": 16384,
+		"iS": 993138,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-13.jpg": {
+		"ft": 16384,
+		"iS": 2142213,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-14.jpg": {
+		"ft": 16384,
+		"iS": 3058865,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-14.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-15.jpg": {
+		"ft": 16384,
+		"iS": 527563,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-16.jpg": {
+		"ft": 16384,
+		"iS": 2714806,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-16.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-17.jpg": {
+		"ft": 16384,
+		"iS": 281982,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-17.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-18.jpg": {
+		"ft": 16384,
+		"iS": 2278753,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-18.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-19.jpg": {
+		"ft": 16384,
+		"iS": 911793,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-19.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-2.jpg": {
+		"ft": 16384,
+		"iS": 1086852,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-20.jpg": {
+		"ft": 16384,
+		"iS": 4913686,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-20.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-21.jpg": {
+		"ft": 16384,
+		"iS": 1090335,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-22.jpg": {
+		"ft": 16384,
+		"iS": 523319,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-22.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-23.jpg": {
+		"ft": 16384,
+		"iS": 420187,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-23.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-3.jpg": {
+		"ft": 16384,
+		"iS": 502363,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-4.jpg": {
+		"ft": 16384,
+		"iS": 1533450,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-5.jpg": {
+		"ft": 16384,
+		"iS": 2445302,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-6.jpg": {
+		"ft": 16384,
+		"iS": 926110,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-7.jpg": {
+		"ft": 16384,
+		"iS": 2841555,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-8.jpg": {
+		"ft": 16384,
+		"iS": 427574,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/illustrations/illustration-9.jpg": {
+		"ft": 16384,
+		"iS": 921288,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/illustrations/illustration-9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/professional/hero.jpg": {
@@ -660,13 +877,21 @@
 		"oAP": "/dev/content/academic-content.html",
 		"oF": 0
 		},
+	"/dev/content/illustrations-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/illustrations-content.html",
+		"oF": 1
+		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/dev/content/personal-content.kit": {
 		"cB": 0,
@@ -732,6 +957,14 @@
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
 		},
+	"/dev/illustrations.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/illustrations.html",
+		"oF": 2
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -740,14 +973,14 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/fancyBox.js": {
+	"/dev/js/load-screen.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/deploy/js/fancyBox-min.js",
-		"oF": 3,
+		"oAP": "/dev/js/load-screen-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -758,7 +991,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/burger-animation-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -769,7 +1002,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/burger-click-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -780,7 +1013,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/burger-mouse-events-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -791,7 +1024,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/main-nav-click-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -806,19 +1039,8 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/personal.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/personal-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/scripts.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -828,46 +1050,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/scroll-trigger-about.js": {
+	"/dev/js/sections/resume-button.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/scroll-trigger-about-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/scroll-trigger-academic.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/scroll-trigger-academic-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/scroll-trigger-nav.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/scroll-trigger-nav-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/scroll-trigger-professional.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/scroll-trigger-professional-min.js",
+		"oAP": "/dev/js/sections/resume-button-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1094,6 +1283,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_illustrations-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_illustrations-content.css",
+		"oF": 1,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1153,6 +1355,72 @@
 		"oA": 0,
 		"oAP": "/deploy/template.html",
 		"oF": 2
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/node_modules/gsap/CSSPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/CSSPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/gsap-core.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/gsap-core-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/jquery/dist/jquery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [

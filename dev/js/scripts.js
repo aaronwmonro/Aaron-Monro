@@ -1,17 +1,71 @@
-gsap.registerPlugin( MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin );
+gsap.registerPlugin( MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin, TextPlugin);
 
-// @codekit-prepend "main-nav/burger-animation.js";
-// @codekit-prepend "main-nav/burger-mouse-events.js";
-// @codekit-prepend "main-nav/nav-global.js";
-// @codekit-prepend "main-nav/burger-click.js";
-// @codekit-prepend "main-nav/main-nav-click.js";
+import {gsap} from "gsap";
+import {TextPlugin} from "gsap/TextPlugin";
 
 
+import $ from "jquery";
 
-// @codekit-prepend "scroll-trigger-academic.js";
-// @codekit-prepend "scroll-trigger-about.js";
-// @codekit-prepend "scroll-trigger-nav.js";
-// @codekit-prepend "scroll-trigger-professional.js";
-// @codekit-prepend "personal.js";
-// @codekit-prepend "fancyBox.js";
-// @codekit-prepend "tinySlider.js";
+import { burgerAnimationTimeLine } from "./main-nav/burger-animation";
+
+import {canYouSeeTheMenu} from "./main-nav/nav-global.js"
+
+
+// import {} from "./sections/illustrations/.js"
+
+// burger imports & animations
+import {hideShowMainNav} from "./main-nav/nav-global.js"
+
+//burgerAnimationTimeLine();
+// hideShowMainNav();
+
+// // index imports
+// import {loadScreenAnimation} from "./sections/index/index-load-screen.js"
+
+// loadScreenAnimation();
+
+//main nav clicks
+$("#burger").on("click", hideShowMainNav);
+
+
+
+$("#burger").on("mouseenter", function () {
+
+    if (canYouSeeTheMenu === false) {
+  
+        burgerAnimationTimeLine.play("burgerToRightArrow")
+    } else {
+       
+        burgerAnimationTimeLine.play("xToLeftArrow");
+       
+    }
+
+})
+
+$("#burger").on("mouseleave", function () {
+
+
+    if (canYouSeeTheMenu === false) {
+        
+        burgerAnimationTimeLine.reverse("burgerToRightArrowReverse")
+       
+    } else {
+        
+        burgerAnimationTimeLine.reverse("xToLeftArrowReverse");
+    }
+
+})
+
+
+
+
+import {loadScreenAnimation, loadScreenTwoAnimation, loadAnimation, exitAnimation} from "./load-screen.js";
+loadScreenAnimation();
+loadScreenTwoAnimation();
+loadAnimation();
+exitAnimation();
+
+
+import {resumeAnimation } from "./sections/resume-button";
+
+resumeAnimation();

@@ -1,4 +1,4 @@
-var burgerAnimationTimeLine = gsap.timeline({
+export var burgerAnimationTimeLine = gsap.timeline({
     paused: true
 });
 var burgerAnimateSpeed = 0.25;

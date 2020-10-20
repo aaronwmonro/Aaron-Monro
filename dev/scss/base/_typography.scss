@@ -18,56 +18,68 @@ p{
     padding: 0;
 }
 
-.section-title{
-    font-weight: 300;
-}
+// .section-title{
+//     font-weight: 300;
+// }
 
 .name-logo{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
     font-size: rem-calc(25);
-    font-style: italic;
+    // font-style: italic;
     text-decoration: none;
     color: black;
     @include md{
         font-size: rem-calc(30); 
     }
     @include lg{
-        font-size: rem-calc(25); 
+        font-size: rem-calc(30); 
     }
-    span{
-        font-weight: 200;
-    }
+
     
 }
 
 .section-title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: rem-calc(28);
-    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: rem-calc(35);
+    // font-style: italic;
 
-    @include md{
-        font-size: rem-calc(36); 
-    }
     @include md{
         font-size: rem-calc(40); 
     }
-    span{
-        font-weight: 200;
+    @include lg{
+        font-size: rem-calc(50); 
     }
+    
 }
 
-.section-text{ padding: 20px 0 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: rem-calc(16);
-    line-height: 25px;
-   text-align: justify;
-    @include md{
-        font-size: rem-calc(18); 
-    }
+// .section-text{ padding: 20px 0 0;
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 300;
+//     font-size: rem-calc(16);
+//     line-height: 25px;
+//    text-align: justify;
+//     @include md{
+//         font-size: rem-calc(18); 
+//     }
+// }
+
+.section-text{
+    font-size: rem-calc(18);
+                font-family: 'Lato', serif;
+                font-weight: 300;
+                line-height: 30px;
+                text-align: left;
+                @include lg{line-height: 35px;
+                    font-size: rem-calc(18);
+                }
 }
+
 .section-nav{ padding: 40px 0 0;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -78,3 +90,4 @@ p{
    color: black;
    
 }
+

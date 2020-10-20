@@ -5,15 +5,18 @@ header {
   position: fixed;
   width: 100%;
   z-index: 3000;
-  
-  // @include lg{ background-color: rgba($color: $grey, $alpha: .50);}
-
+  background-color: white;
+  // @include lg{ background-color: rgba($color: white, $alpha: 0);}
+  @include lg{ background-color: rgba($color: black, $alpha: 1);}
   div {
     display: grid;
     grid-template-columns: auto 50px;
     grid-template-areas: "logo burger";
     padding: 10px 0;
 
+    @include lg{grid-template-columns: 270px 50% auto ;
+      grid-template-areas: "logo sections socials";
+    }
 
     // @include lg {
     //   padding: 20px 0;
@@ -23,40 +26,145 @@ header {
     //   grid-template-columns: repeat(2, 1fr);
     // }
 
+    #sections-container{
+      display: none;
+    }
+
+    #socials-container{
+      display: none;
+    }
+
+   @include lg{
+    #sections-container{
+      grid-area: sections;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-left: white 1px solid;
+
+      #pages{display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        li {display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 20px;
+          width: 100%;
+      }
+
+      a:link,
+      a:visited {
+          color: white;
+          font-family: 'Lato', sans-serif;
+          font-size: rem-calc(18);
+          font-weight: 300;
+          text-decoration: none;
+          transition: 0.25s;
+          text-align: center;
+         
+      }
+
+      a:hover,
+      a:active {
+        color:$grey;
+        font-weight: 800;
+        letter-spacing: 2px;
+        // font-size: rem-calc(20);
+          
+      }
+
+      }
+
+    }
+   }
+
+
+  @include lg{
+    #socials-container{
+      grid-area: socials;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+        padding-right: 30px;
+  
+      #socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    
+        li {display: flex;
+          align-items: center;
+          justify-content: center;
+         
+          padding-left: 20px;
+      }
+        a:link,
+        a:visited {
+          color: white;
+            font-size: rem-calc(22);
+            font-weight: 300;
+            text-decoration: none;
+            transition: 0.25s;
+            width: 100%;
+            // border: 1px solid white;
+            // border-radius: 20px;
+            // padding: 3px 7px ;
+          
+        }
+  
+        a:hover,
+        a:active {
+            color: $grey;
+            font-size: rem-calc(30);
+            border-radius: 0;
+            border: none;
+            
+            
+        }
+      }
+     }
+  }
+
     #name-container {
       align-items: center;
       grid-area: logo;
       display: flex;
 
+      @include lg{
+        justify-content: flex-end;
+      }
+
       a:link,
       a:visited {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: rem-calc(25);
-        font-style: italic;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        font-size: rem-calc(27);
         text-decoration: none;
         color: black;
-        transition: 0.8s;
+        transition: 0.25s;
+
 
         @include md {
           font-size: rem-calc(30);
         }
 
         @include lg {
-          font-size: rem-calc(30);
-        }
-
-        span {
-          font-weight: 200;
+          font-size: rem-calc(35);
+          padding-right: 20px;
+          color: white;
         }
       }
 
       a:hover,
       a:active {
-        color: black;
-        font-size: rem-calc(30);
-        font-style: normal;
-        transition: 0.8s;
+        color:$grey;
+        // font-size: rem-calc(30);
+        // font-style: normal;
+        
+        letter-spacing: 2px;
 
       }
 
@@ -67,6 +175,10 @@ header {
       align-items: center;
       display: flex;
       justify-content: flex-end;
+
+      @include lg{
+        display: none;
+      }
 
       #burger {
         cursor: pointer;

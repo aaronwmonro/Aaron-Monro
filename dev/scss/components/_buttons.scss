@@ -5,9 +5,11 @@
 	background-color: black;
 	color: #fff;
 	width: 100px;
-	font-weight: 400;
+	border: none;
 	font-size: 1rem;
 	padding: 10px 10px;
+	font-family: 'Playfair Display', serif;
+                                font-weight: 800;
 	
 	
   }
@@ -23,6 +25,9 @@
 	  padding: 10px;
 	}
   }
-  .black:hover {
+  .black-button:hover {
+	transition: .5s;
 	background-color: $grey;
+	color: black;
+	
   }

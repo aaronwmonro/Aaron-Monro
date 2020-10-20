@@ -71,19 +71,19 @@ if(mySlider4.length > 0){
 }
 
 
-tns({
-  container: '.my-slider-1',
-  items: 1,
-  gutter: 0,
-  edgePadding: 0,
-  controls: false,
-  controlsPosition: "bottom",
-  navPosition: "bottom",
-  loop: true,
+// tns({
+//   container: '.my-slider-1',
+//   items: 1,
+//   gutter: 0,
+//   edgePadding: 0,
+//   controls: false,
+//   controlsPosition: "bottom",
+//   navPosition: "bottom",
+//   loop: true,
 
-  autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayPosition: "bottom", 
-  swipeAngle: false,
-  speed: 2000
-});
+//   autoplay: true,
+//   autoplayTimeout: 3000,
+//   autoplayPosition: "bottom", 
+//   swipeAngle: false,
+//   speed: 2000
+// });
