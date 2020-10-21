@@ -2352,16 +2352,25 @@ footer > div a:active {
   align-items: center;
   padding-top: 20px;
 }
-#about-container > div #about-content #resume-content svg {
+#about-container > div #about-content #resume-content a:link svg,
+#about-container > div #about-content #resume-content a:visited svg {
   width: 250px;
 }
-#about-container > div #about-content #resume-content svg #resume-button-container #resume-button #yellow-rectangle {
-  opacity: 0;
+#about-container > div #about-content #resume-content a:link svg #resume-button-container #resume-button #resume,
+#about-container > div #about-content #resume-content a:visited svg #resume-button-container #resume-button #resume {
+  z-index: 500;
 }
-#about-container > div #about-content #resume-content svg #resume-button-container #resume-button #download {
+#about-container > div #about-content #resume-content a:link svg #resume-button-container #resume-button #yellow-rectangle,
+#about-container > div #about-content #resume-content a:visited svg #resume-button-container #resume-button #yellow-rectangle {
+  z-index: 400;
+}
+#about-container > div #about-content #resume-content a:link svg #resume-button-container #resume-button #download,
+#about-container > div #about-content #resume-content a:visited svg #resume-button-container #resume-button #download {
   visibility: hidden;
 }
-#about-container > div #about-content #resume-content svg #resume-button-container #resume-button #check {
+#about-container > div #about-content #resume-content a:link svg #resume-button-container #resume-button #check,
+#about-container > div #about-content #resume-content a:visited svg #resume-button-container #resume-button #check {
+  z-index: 500;
   visibility: hidden;
 }
 #about-container > div #about-content #about-social {

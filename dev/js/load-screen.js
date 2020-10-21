@@ -6,7 +6,7 @@ gsap.registerPlugin(TextPlugin);
 
 
 
-var morphAnimationSpeed = .35;
+var morphAnimationSpeed = .25;
 
 
 // const loadScreenTL = gsap.timeline({repeat: 4, yoyo: true});
@@ -57,7 +57,7 @@ export function loadScreenTwoAnimation(){
 var morAnimationSpeed = 1;
 
 const loadScreenTwoTL = gsap.timeline();
-loadScreenTwoTL.to(".circle",{duration: 0, ry:30, rx:30, ease: "power2"}, "+=6.75") 
+loadScreenTwoTL.to(".circle",{duration: 0, ry:30, rx:30, ease: "power2"}, "+=6.5") 
             .to("#one",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL")
             .to("#two",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL+=.2")
             .to("#three",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL+=.3")
@@ -95,6 +95,6 @@ export function exitAnimation(){
 }
 
 const exitTL = gsap.timeline();
-exitTL.to("#home-load", {duration: 2, yPercent:-100, ease: "none"}, "+=7");
+exitTL.to("#home-load", {duration: 1, yPercent:-100, ease: "none"}, "+=7");
 
 

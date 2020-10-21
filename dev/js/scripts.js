@@ -32,8 +32,8 @@ $("#burger").on("click", hideShowMainNav);
 $("#burger").on("mouseenter", function () {
 
     if (canYouSeeTheMenu === false) {
-  
-        burgerAnimationTimeLine.play("burgerToRightArrow")
+        console.log("mouseenter")
+        burgerAnimationTimeLine.play("burgerToRightArrow");
     } else {
        
         burgerAnimationTimeLine.play("xToLeftArrow");
@@ -46,8 +46,8 @@ $("#burger").on("mouseleave", function () {
 
 
     if (canYouSeeTheMenu === false) {
-        
-        burgerAnimationTimeLine.reverse("burgerToRightArrowReverse")
+        console.log("mouseleave")
+        burgerAnimationTimeLine.reverse("burgerToRightArrowReverse");
        
     } else {
         
@@ -66,6 +66,78 @@ loadAnimation();
 exitAnimation();
 
 
-import {resumeAnimation } from "./sections/resume-button";
+import {resumeAnimation, resumeClickAnimation } from "./sections/resume-button";
 
 resumeAnimation();
+resumeClickAnimation();
+
+
+
+
+
+
+
+
+// $("#toggle-button").on("click", function(){
+//     console.log("working");
+//     if(toggle === false){
+
+//         mainResumeTL.play("yellowBarLoad");
+//         toggle = true;
+
+//     }else{
+//         mainResumeTL.reverse("yellowBarLoad");
+//        toggle = false;
+//     }
+// })
+
+const mainResumeTL = gsap.timeline({paused:true});
+mainResumeTL.add(resumeAnimation());
+
+var toggle = false;
+
+$("#toggle-button").on("mouseenter", function () {
+     
+   
+        console.log("working");
+        if(toggle === false){
+    
+            mainResumeTL.play();
+            toggle = true;
+        }
+        
+})
+
+
+
+// $("#toggle-button").on("mouseleave", function () {
+    
+//     console.log("alsoworking");
+//         if(toggle === true){
+    
+//             mainResumeTL.reverse();
+//             toggle = false;
+//         }
+        
+
+// })
+
+var toggles = false;
+
+const mainClickTL = gsap.timeline({paused:true});
+mainClickTL.add(resumeClickAnimation());
+
+
+
+$("#toggle-button").on("click", function () {
+     
+   
+    console.log("working");
+    if(toggles === false){
+
+        mainClickTL.play();
+        toggles = true;
+    }
+    
+})
+

@@ -70,58 +70,63 @@ overflow: hidden;
                 align-items: center;
                 padding-top: 20px;
 
-                svg{
-                    width: 250px;
+                // svg{
+                //     width: 250px;
 
-                    #resume-button-container{
-                        #resume-button{
+                //     #resume-button-container{
+                //         #resume-button{
 
-                            #yellow-rectangle{
-                           opacity: 0;
-                            }
-                            #download{
-                                visibility: hidden;
-                            }
+                //             #yellow-rectangle{
+                //            opacity: 0;
+                //             }
+                //             #download{
+                //                 visibility: hidden;
+                //             }
 
-                            #check{
-                                visibility: hidden;
-                            }
-
-
-                        }
-                    }
-
-
-
-                }
-                // a:link,
-                //     a:visited {
-                //         svg{
-                //             width: 250px;
-
-                //             #resume-button-container{
-                //                 #resume-button{
-
-                //                     #yellow-rectangle{
-                //                     display: none;
-                //                     }
-                //                     #download{
-                //                         visibility: hidden;
-                //                     }
-
-                //                     #check{
-                //                         display: none;
-                //                     }
-
-
-                //                 }
+                //             #check{
+                //                 visibility: hidden;
                 //             }
 
 
-
                 //         }
-                       
                 //     }
+
+
+
+                // }
+                a:link,
+                    a:visited {
+                        svg{
+                            width: 250px;
+
+                            #resume-button-container{
+
+                                #resume-button{
+
+                                    #resume{
+                                        z-index: 500;
+                                    }
+
+                                    #yellow-rectangle{
+                                        z-index: 400;
+                                    }
+                                    #download{
+                                        visibility: hidden;
+                                    }
+
+                                    #check{z-index: 500;
+                                        visibility: hidden;
+                                    }
+
+
+                                }
+                            }
+
+
+
+                        }
+                       
+                    }
         
                 //     a:hover,
                 //     a:active { div{
@@ -137,20 +142,20 @@ overflow: hidden;
                 //     padding: 10px 0;
                 //     border-radius: 30px;
                 // }
-                    // a:link,
-                    // a:visited {
-                    //     color: white;
-                    //     font-size: rem-calc(25);
-                    //     transition: 0.25s;
-                    //     text-decoration: none;
-                    //     font-family: 'Playfair Display', serif;
-                    //     font-weight: 800;
-                    // }
+                //     a:link,
+                //     a:visited {
+                //         color: white;
+                //         font-size: rem-calc(25);
+                //         transition: 0.25s;
+                //         text-decoration: none;
+                //         font-family: 'Playfair Display', serif;
+                //         font-weight: 800;
+                //     }
         
-                    // a:hover,
-                    // a:active {border-radius: 30px;
-                    //     color: $grey;
-                    // }
+                //     a:hover,
+                //     a:active {border-radius: 30px;
+                //         color: $grey;
+                //     }
             }
             #about-social{
                 grid-area: social;
