@@ -6,7 +6,7 @@ gsap.registerPlugin(TextPlugin);
 
 
 
-var morphAnimationSpeed = .25;
+var morphAnimationSpeed = .20;
 
 
 // const loadScreenTL = gsap.timeline({repeat: 4, yoyo: true});
@@ -27,18 +27,18 @@ var morphAnimationSpeed = .25;
 
 const loadScreenTL = gsap.timeline({repeat: 3, yoyo: true});
 loadScreenTL.to("#one",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL")
-            .to("#two",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.2")
-            .to("#three",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.3")
-            .to("#four",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.4")
-            .to("#five",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.5")
-            .to("#six",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.6")
-            .to("#seven",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.7")
-            .to("#eight",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.8")
-            .to("#nine",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.9")
-            .to("#ten",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=1")
-            .to("#eleven",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=1.1")
-            .to("#twelve",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=1.2")
-            .to("#thirteen",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=1.3")       
+            .to("#two",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.05")
+            .to("#three",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.1")
+            .to("#four",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.15")
+            .to("#five",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.2")
+            .to("#six",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.25")
+            .to("#seven",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.3")
+            .to("#eight",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.35")
+            .to("#nine",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.4")
+            .to("#ten",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.45")
+            .to("#eleven",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.5")
+            .to("#twelve",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.55")
+            .to("#thirteen",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL+=.6")       
 ;
 
 gsap.set(".circle",{transformOrigin: "center"});
@@ -57,7 +57,7 @@ export function loadScreenTwoAnimation(){
 var morAnimationSpeed = 1;
 
 const loadScreenTwoTL = gsap.timeline();
-loadScreenTwoTL.to(".circle",{duration: 0, ry:30, rx:30, ease: "power2"}, "+=6.5") 
+loadScreenTwoTL.to(".circle",{duration: 0, ry:30, rx:30, ease: "power2"}, "+=3.5") 
             .to("#one",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL")
             .to("#two",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL+=.2")
             .to("#three",{duration: morAnimationSpeed, y:-1500, ease: "power2"}, "morTL+=.3")
@@ -75,7 +75,7 @@ loadScreenTwoTL.to(".circle",{duration: 0, ry:30, rx:30, ease: "power2"}, "+=6.5
 
 
             const loadTL = gsap.timeline();
-            loadTL.to("#loading", {duration: 4.5, text:" loading...", ease: "power2"})
+            loadTL.to("#loading", {duration: 2, text:" loading...", ease: "power2"})
                     .to("#loading", {duration: 2, text:" loaded", ease: "power2"});
 
 
@@ -95,6 +95,6 @@ export function exitAnimation(){
 }
 
 const exitTL = gsap.timeline();
-exitTL.to("#home-load", {duration: 1, yPercent:-100, ease: "none"}, "+=7");
+exitTL.to("#home-load", {duration: 1, yPercent:-100, ease: "none"}, "+=4.25");
 
 
