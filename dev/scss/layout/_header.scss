@@ -14,7 +14,7 @@ header {
     grid-template-areas: "logo burger";
     padding: 10px 0;
 
-    @include lg{grid-template-columns: 270px 50% auto ;
+    @include lg{grid-template-columns: 240px 50% auto ;
       grid-template-areas: "logo sections socials";
     }
 
@@ -51,7 +51,15 @@ header {
           justify-content: center;
           padding-left: 20px;
           width: 100%;
+          width: 50px;
+        //  overflow: visible;
       }
+
+      li:nth-child(3){
+        width: 70px;
+      }
+
+      
 
       a:link,
       a:visited {
@@ -98,7 +106,8 @@ header {
         li {display: flex;
           align-items: center;
           justify-content: center;
-         
+         width: 25px;
+         overflow: visible;
           padding-left: 20px;
       }
         a:link,
@@ -109,6 +118,7 @@ header {
             text-decoration: none;
             transition: 0.25s;
             width: 100%;
+
             // border: 1px solid white;
             // border-radius: 20px;
             // padding: 3px 7px ;
@@ -119,8 +129,9 @@ header {
         a:active {
             color: $grey;
             font-size: rem-calc(30);
-            border-radius: 0;
-            border: none;
+            // border-radius: 0;
+            // border: none;
+            letter-spacing: 2px;
             
             
         }
@@ -134,7 +145,8 @@ header {
       display: flex;
 
       @include lg{
-        justify-content: flex-end;
+        justify-content: center;
+        width: 250px;
       }
 
       a:link,
@@ -152,8 +164,8 @@ header {
         }
 
         @include lg {
-          font-size: rem-calc(35);
-          padding-right: 20px;
+          font-size: rem-calc(30);
+          // padding-right: 5px;
           color: white;
         }
       }

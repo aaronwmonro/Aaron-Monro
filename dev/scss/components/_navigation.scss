@@ -4,9 +4,9 @@
 
 
 #main-nav{
-	background-color: rgba($color: $grey, $alpha: .90);
+	background-color: rgba($color: #000, $alpha: 1);
     place-items: center;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -20,6 +20,9 @@
 
     @include lg{
         display: none;
+       
+    
+
     }
 
     // div{
@@ -33,21 +36,50 @@
             // li:nth-child(1) {
             //     font-size: rem-calc(30);
             // }
+           @include lg{
+            padding: 0 0 0 20px;
+            li:nth-child(6) {
+                display: none;
+             }
+
+             li:nth-child(5) {
+                display: none;
+             }
+           }
+
+            
             li{
-                a:link, a:visited{ 
-                    text-decoration: none;
-                   color: black;
-                   transition: 0.8s;
-                   
-                   &:hover, &:active {
-                    transition: 0.8s;
-                    color: black;
-                    font-size: rem-calc(30);
-                    
-                }
-                   
-                  
-                }
+
+                
+                
+
+                a:link,
+        a:visited {
+          color: white;
+            // font-size: rem-calc(22);
+            // font-weight: 300;
+            text-decoration: none;
+            transition: 0.25s;
+            width: 100%;
+
+          
+
+            // border: 1px solid white;
+            // border-radius: 20px;
+            // padding: 3px 7px ;
+          
+        }
+  
+        a:hover,
+        a:active {
+            color: $grey;
+            // font-size: rem-calc(30);
+            // border-radius: 0;
+            // border: none;
+            letter-spacing: 3px;
+            
+            
+        }
                
             }
         }

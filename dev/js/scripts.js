@@ -110,6 +110,8 @@ $("#toggle-button").on("mouseenter", function () {
 
 
 
+
+
 // $("#toggle-button").on("mouseleave", function () {
     
 //     console.log("alsoworking");
@@ -140,4 +142,63 @@ $("#toggle-button").on("click", function () {
     }
     
 })
+
+
+
+import {navDesktopAnimation } from "./main-nav/main-nav-desktop";
+
+navDesktopAnimation();
+
+const mainNavDesktopTL = gsap.timeline({paused:true});
+mainNavDesktopTL.add(navDesktopAnimation());
+
+var toggled = false;
+
+$("#nav-hover").on("mouseenter", function () {
+     
+   
+        console.log("yeah yeah yeah");
+        if(toggled === false){
+    
+            mainNavDesktopTL.play();
+            // toggled = true;
+        }
+        
+})
+
+$("#nav-hover").on("mouseleave", function () {
+    
+    console.log("blah blah blah");
+        if(toggled === true){
+    
+            mainNavDesktopTL.reverse();
+            toggled = false;
+        }
+        
+
+})
+
+// $("#main-nav-desktop").on("mouseenter", function () {
+     
+   
+//     console.log("yeah yeah yeah");
+//     if(toggled === false){
+
+//         mainNavDesktopTL.play();
+//         toggled = true;
+//     }
+    
+// })
+
+// $("#main-nav-desktop").on("mouseleave", function () {
+
+// console.log("blah blah blah");
+//     if(toggled === true){
+
+//         mainNavDesktopTL.reverse();
+//         toggled = false;
+//     }
+    
+
+// })
 

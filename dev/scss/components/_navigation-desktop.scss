@@ -1,0 +1,90 @@
+/* =============
+    Navigation
+============= */
+
+@include lg{
+    #main-nav-desktop{
+        background-color: rgba($color: #000, $alpha: 1);
+        place-items: center;
+        position: fixed;
+        
+        z-index: 900;
+    
+      
+
+            width: 245px;
+            margin-left: 290px;
+            height: 190px;
+    
+            margin-top:54px ;
+    
+            display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    
+        
+    
+        // div{
+           
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: flex-end;
+        // }
+        
+            ul{
+                // li:nth-child(1) {
+                //     font-size: rem-calc(30);
+                // }
+               
+                padding: 0 0 0 20px;
+                li:nth-child(6) {
+                    display: none;
+                 }
+    
+                 li:nth-child(5) {
+                    display: none;
+                 }
+               
+    
+                
+                li{
+    
+                    
+                    
+    
+                    a:link,
+            a:visited {
+              color: white;
+                // font-size: rem-calc(22);
+                // font-weight: 300;
+                text-decoration: none;
+                transition: 0.25s;
+                width: 100%;
+    
+              
+    
+                // border: 1px solid white;
+                // border-radius: 20px;
+                // padding: 3px 7px ;
+              
+            }
+      
+            a:hover,
+            a:active {
+                color: $grey;
+                // font-size: rem-calc(30);
+                // border-radius: 0;
+                // border: none;
+                letter-spacing: 3px;
+                
+                
+            }
+                   
+                }
+            }
+        
+    }
+}
+
+

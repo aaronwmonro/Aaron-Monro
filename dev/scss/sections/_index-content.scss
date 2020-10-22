@@ -17,7 +17,11 @@ overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        margin-bottom: -10vh;
+        
+
+        @include lg{
+            margin-bottom: -10vh;
+        }
             
             svg{ overflow: visible;
                 
