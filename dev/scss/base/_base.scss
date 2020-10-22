@@ -97,3 +97,48 @@ ul{
 }
 
 
+.intro-start{
+    display: grid;
+        grid-template-rows: 80% auto;
+        height: 90vh;
+        @include lg{
+            grid-template-rows: 90% auto;
+            height: 100vh;
+        }
+
+
+    .intro-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: rem-calc(50);
+            padding-top: 100px;
+            @include md{
+                font-size: rem-calc(80);
+                padding-top: 0;
+            }
+
+            @include lg{
+                font-size: rem-calc(100);
+            }
+        }
+   
+    }
+
+    .arrow-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+            i{
+                font-size: rem-calc(40);
+            }
+    
+    }
+}
+
+

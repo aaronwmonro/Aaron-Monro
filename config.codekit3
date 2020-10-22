@@ -909,6 +909,14 @@
 		"oAP": "/dev/content/professional-content.html",
 		"oF": 1
 		},
+	"/dev/content/web-design-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/web-design-content.html",
+		"oF": 1
+		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1386,6 +1394,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/template.html",
+		"oF": 2
+		},
+	"/dev/web-design.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/webdesign.html",
 		"oF": 2
 		},
 	"/node_modules": {

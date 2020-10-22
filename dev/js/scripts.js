@@ -166,13 +166,13 @@ $("#nav-hover").on("mouseenter", function () {
         
 })
 
-$("#nav-hover").on("mouseleave", function () {
+$("#main-nav-desktop").on("mouseleave", function () {
     
     console.log("blah blah blah");
-        if(toggled === true){
+        if(toggled === false){
     
             mainNavDesktopTL.reverse();
-            toggled = false;
+            // toggled = false;
         }
         
 
