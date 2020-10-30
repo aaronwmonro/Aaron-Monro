@@ -1,7 +1,16 @@
+// import $ from "tinySlider";
+
+import * as tinySlider from './tinySlider.js';
+
+console.log(tinySlider);
+
+
 gsap.registerPlugin( MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin, TextPlugin);
 
 import {gsap} from "gsap";
 import {TextPlugin} from "gsap/TextPlugin";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 
 
 import $ from "jquery";
@@ -16,6 +25,8 @@ import {canYouSeeTheMenu} from "./main-nav/nav-global.js"
 // burger imports & animations
 import {hideShowMainNav} from "./main-nav/nav-global.js"
 
+import {progressAnimation} from "./progress-bar.js"
+progressAnimation();
 //burgerAnimationTimeLine();
 // hideShowMainNav();
 

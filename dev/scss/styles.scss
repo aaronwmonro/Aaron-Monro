@@ -8,6 +8,8 @@
 @import "base/_normalize";
 @import "base/_base";
 @import "base/_typography";
+@import "base/_branding-base";
+@import "base/_publication-base";
 
 // Components Styles
 @import "components/_buttons";
@@ -20,6 +22,8 @@
 // Layout Styles
 @import "layout/_header";
 @import "layout/_footer";
+@import "layout/progress-bar";
+
 
 // Sections Styles
 @import "sections/index-content";
@@ -28,3 +32,6 @@
 @import "sections/_about-content";
 @import "sections/_professional-content";
 @import "sections/_illustrations-content";
+@import "sections/_web-design-content";
+@import "sections/_branding-content";
+@import "sections/_publication-content";

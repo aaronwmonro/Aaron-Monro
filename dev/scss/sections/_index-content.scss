@@ -9,7 +9,7 @@
     width: 100vw;
     display: grid;
     grid-template-rows: 60% auto;
-overflow: hidden;
+// overflow: hidden;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     
@@ -140,7 +140,7 @@ overflow: hidden;
        padding-bottom: 30px;
     @include lg{
 
-        height: 70vh;
+        height: 50vh;
     }
         div{display: flex;
             justify-content: center;
@@ -154,13 +154,13 @@ overflow: hidden;
                 line-height: 35px;
                 text-align: center;
                 // color: white;
-                @include md{font-size: rem-calc(25);
-                    line-height: 50px;
+                @include md{font-size: rem-calc(19);
+                    line-height: 40px;
                     width: 80vw;
                 }
 
                 @include lg{
-                    width: 65vw;
+                    width: 60vw;
                 }
                
             }
@@ -181,8 +181,8 @@ overflow: hidden;
       a:hover,
       a:active {
         // color: white;
-        color: $grey;
-        letter-spacing: 2px;
+        // color: $grey;
+        // letter-spacing: 2px;
         // font-size: rem-calc(20);
           
       }
@@ -257,13 +257,14 @@ overflow: hidden;
            
             transition: 0.5s;
             #web-img{transition: 0.5s;
-                background-image: url('../img/home/web-home-img.png');
+                background-image: url('../img/home/web-home-img.jpg');
             height: 30vh;
             width: 100%;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: 140%;    
         opacity: .5;
+        filter: blur(3px);
 
         @include md{
             height: 40vh;
@@ -279,12 +280,13 @@ overflow: hidden;
             #web-img{
                 height: 40vh;
                 opacity: 1;
+                filter: blur(0px);
 
                 @include md{
-                    height: 50vh;
+                    height: 45vh;
                 }
                 @include lg{
-                    height: 60vh;
+                    height: 45vh;
                 }
             }
         }
@@ -348,7 +350,7 @@ overflow: hidden;
         background-repeat: no-repeat;
         background-size: cover;    
         opacity: .5;
-
+        filter: blur(3px);
         @include md{
             height: 40vh;
         }
@@ -363,12 +365,13 @@ overflow: hidden;
             #branding-img{
                 height: 40vh;
                 opacity: 1;
+                filter: blur(0px);
 
                 @include md{
-                    height: 50vh;
+                    height: 45vh;
                 }
                 @include lg{
-                    height: 60vh;
+                    height: 45vh;
                 }
             }
         }
@@ -441,6 +444,7 @@ overflow: hidden;
         background-repeat: no-repeat;
         background-size: cover;    
         opacity: .5;
+        filter: blur(3px);
         @include md{
             height: 40vh;
         }
@@ -455,12 +459,13 @@ overflow: hidden;
             #pub-img{
                 height: 40vh;
                 opacity: 1;
+                filter: blur(0px);
 
                 @include md{
-                    height: 50vh;
+                    height: 45vh;
                 }
                 @include lg{
-                    height: 60vh;
+                    height: 45vh;
                 }
             }
         }
@@ -525,6 +530,7 @@ overflow: hidden;
         background-repeat: no-repeat;
         background-size: cover;    
         opacity: .5;
+        filter: blur(3px);
 
         @include md{
             height: 40vh;
@@ -540,12 +546,13 @@ overflow: hidden;
             #il-img{
                 height: 40vh;
                 opacity: 1;
+                filter: blur(0px);
 
                 @include md{
-                    height: 50vh;
+                    height: 45vh;
                 }
                 @include lg{
-                    height: 60vh;
+                    height: 45vh;
                 }
             }
         }

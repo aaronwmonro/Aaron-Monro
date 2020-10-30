@@ -1,0 +1,195 @@
+#pub-section{
+    overflow: hidden;
+}
+#orchestra-type-container{
+    @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    // grid-template-rows: auto auto auto 150px;
+                    grid-template-areas: "br br"
+                    "brn brn"
+                    "ob ob"
+                    "obt obt"
+                    "ti ti"
+                    " sm  sm"
+                    " smt  smt"
+                    ;
+                   
+                }
+                @include lg{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    // grid-template-rows: auto auto auto 150px;
+                    grid-template-areas: "br br"
+                    "brn brn"
+                    "ob ob"
+                    "obt obt"
+                    "ti sm"
+                    " ti  smt"
+                    ;
+                   
+                }
+    
+    
+                .p-brand{
+                    grid-area: br;
+                }
+                .p-brand-name{
+                    grid-area: brn;
+                    span{
+                        font-size: rem-calc(18);
+    
+                        @include md{
+                            font-size: rem-calc(22);
+                        }
+                    }
+                }
+                .text-img-anchor{
+                    grid-area: ti;
+                    margin-bottom: 40px;
+                        height: 400px;
+        
+                        @include md {
+                            margin-bottom: 0px;
+                            height: 100%;
+                        }
+        
+                        @include lg {
+                            margin-bottom: 0px;
+                            height: 100%;
+                        }
+            
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                        
+                
+                }
+                .p-objective{
+                    grid-area: ob;
+                }
+                .p-objective-text{
+                    grid-area: obt;
+                   
+                }
+                .p-summary{
+                    grid-area: sm;
+                    @include md{
+                        padding-top: 40px;
+                    }
+                    @include lg{
+                        padding-top: 40px;
+                    }
+                }
+                .p-summary-text{
+                    grid-area: smt;
+                    @include lg{
+                        padding-bottom: 40px;
+                    }
+                }
+                
+            }
+
+            #orchestra-poster-view{
+                padding-top: 0px;
+                padding-bottom: 20px;
+                @include lg{
+                    padding-top: 100px;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h2{ font-family: 'Lato', serif;
+                    font-size: rem-calc(14);
+                    font-weight: 300;
+                    text-align: center;
+                }
+                div{
+                   
+                    // padding-bottom: 40px;
+                        height: auto;
+                        width: 80vw;
+
+                        @include md{
+                            height: auto;
+                            width: 30vw;
+                        }
+                        @include lg{
+                            height: auto;
+                            width: 30vw;
+                        }
+        
+                        
+            
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                        
+                
+                }
+
+            }
+
+            .poster-slider-title-div{
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                @include lg{
+                    padding-top: 100px;
+                }
+                h2{
+                    
+                }
+            }
+    
+            .my-slider-base-poster{
+                padding-top: 5px;
+                
+                div {
+                    height: 500px;
+    
+                    @include md {
+                        height: 400px;
+                    }
+    
+                    @include lg {
+                        height: 600px;
+                    }
+        
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    
+                }
+            
+                
+            }
+
+#type-poster-section{
+    @include lg{
+        margin: 100px 0 0;
+    }
+
+    border-bottom: none;
+
+}
+                
+            
+    
+           
+           
+        

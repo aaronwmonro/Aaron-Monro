@@ -1,0 +1,255 @@
+.branding-mockup{
+display: flex;
+justify-content: center;
+align-items: center;
+    img{
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
+       
+        width: 100%;
+
+        @include md{
+            height: 50vh;
+        }
+        @include lg{
+            height: 80vh;
+            width: 75%;
+        }
+    }
+    margin-bottom: 100px;
+}
+
+
+
+
+.branding-section{
+    padding-top: 40px;
+    >div{
+        .svg-container{
+        //   height: 70vh;
+          display: grid;
+          grid-template-columns: 50% auto;
+grid-template-areas: "fsvg fsvg"
+"bsvg svg";
+// gap: 20px;
+            @include md{
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            
+            }
+
+            @include lg{
+                height: 50vh;
+            }
+
+
+            
+            svg{
+
+                @include md{
+                    margin: 0 40px;
+                }
+            }
+
+            .brand-svg{
+                grid-area: svg;
+              width: 100%;
+              height: 15vh;
+              margin-top: 20px;
+                @include md{
+                    margin-top: 0px;
+                    height: 20vh;
+                }
+                @include lg{
+                    height: 30vh;
+                }
+                
+            }
+
+            .brand-svg-full{
+                grid-area: fsvg;
+              height: 50vh;
+                width: 100%;
+                @include md{
+                    height: 50vh;
+                }
+               
+            }
+            .brand-svg-black{
+                grid-area: bsvg;
+                width: 100%;
+                height: 15vh;
+                margin-top: 20px;
+                @include md{
+                    margin-top: 0px;
+                    height: 20vh;
+                }
+
+                @include lg{
+                    height: 30vh;
+                }
+
+            }
+
+           
+            
+        }
+
+        #pii-svg-container{
+            @include lg{
+                padding-top: 100px;
+                height: 100%;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        }
+        
+        .branding-type-container{
+        
+            @include lg{
+                display: grid;
+                grid-template-columns: 50% auto;
+                // grid-template-rows: auto auto auto 150px;
+                grid-template-areas: "br br"
+                "brn brn"
+                "ob ob"
+                "obt obt"
+                "ab sm"
+                " abt  smt"
+                ;
+               
+            }
+            .brand{
+                grid-area: br;
+            }
+            .brand-name{
+                grid-area: brn;
+            }
+            .about{
+                grid-area: ab;
+            }
+            .about-text{
+                grid-area: abt;
+            }
+            .objective{
+                grid-area: ob;
+            }
+            .objective-text{
+                grid-area: obt;
+               
+            }
+            .b-summary{
+                grid-area: sm;
+            }
+            .b-summary-text{
+                grid-area: smt;
+            }
+            
+            
+        }
+    }
+}
+
+ 
+       
+        
+        
+        .branding-process-sliders{
+            // border-left: black 1px solid;
+            // border-right: black 1px solid;
+margin:100px 0 ;
+
+@include xl{
+    margin:100px 5vw;
+}
+
+        h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // font-weight: 400;
+                padding-bottom: 20px;
+                font-family: 'Lato', serif;
+                font-weight: 300;
+                @include md{
+                    padding-bottom: 40px;
+                }
+                
+    
+            }
+            .my-slider-2 {
+                
+                div {
+                    height: 300px;
+    
+                    @include md {
+                        height: 200px;
+                    }
+    
+                    @include lg {
+                        height: 200px;
+                    }
+                    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: auto;
+                        object-position: center;
+                      
+                        
+                    }
+                   
+
+                   margin-bottom: 20px;
+                }
+            }
+
+            .my-slider-3 {
+                
+                div {
+                    height: 300px;
+    
+                    @include md {
+                        height: 200px;
+                    }
+    
+                    @include lg {
+                        height: 200px;
+                    }
+                    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: auto;
+                        object-position: center;
+                      
+                        
+                    }
+                   
+
+                   margin-bottom: 20px;
+                }
+            }
+
+
+    
+            .tns-controls [aria-controls] {
+                margin: 20px;
+                color: white;
+                background: black;
+                border-radius: 0;
+    
+    
+            }
+        }
+// .branding-mock-up{
+
+// }
+    
+    
+
+

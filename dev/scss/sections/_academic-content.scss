@@ -18,463 +18,463 @@
 /* --------------------------
     PII-Hero
  --------------------------*/
-#pii-hero {
-    box-shadow: -10px 0px 100px black;
-    z-index: 1000;
-    background-color: $blue;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    @include lg {
-        height: 100vh;
-    }
+// #pii-hero {
+//     box-shadow: -10px 0px 100px black;
+//     z-index: 1000;
+//     background-color: $blue;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     @include lg {
+//         height: 100vh;
+//     }
 
-    #pii-content {
-        img {
-            width: 200px;
+//     #pii-content {
+//         img {
+//             width: 200px;
 
-            @include md {
-                width: 300px;
-            }
-        }
-    }
-}
+//             @include md {
+//                 width: 300px;
+//             }
+//         }
+//     }
+// }
 
 /* --------------------------
     PII-Content
  --------------------------*/
-#pii-container {
-    background-color: $grey;
-    position: relative;
-    z-index: 1100;
-    box-shadow: -10px 0px 100px black;
-    >div {
-        display: grid;
-        grid-template-columns: 7.5% auto;
-        gap: 20px;
-        grid-template-areas: "colors text"
-            "mock mock";
+// #pii-container {
+//     background-color: $grey;
+//     position: relative;
+//     z-index: 1100;
+//     box-shadow: -10px 0px 100px black;
+//     >div {
+//         display: grid;
+//         grid-template-columns: 7.5% auto;
+//         gap: 20px;
+//         grid-template-areas: "colors text"
+//             "mock mock";
 
-        @include md {
-            grid-template-columns: 7.5% 50% auto;
-            gap: 50px;
-            grid-template-areas: "colors text mock"
-            ;
-        }
+//         @include md {
+//             grid-template-columns: 7.5% 50% auto;
+//             gap: 50px;
+//             grid-template-areas: "colors text mock"
+//             ;
+//         }
 
-        @include lg {
-            grid-template-columns: 25% 7.5% auto;
-            gap: 70px;
-            grid-template-areas: "mock colors text"
+//         @include lg {
+//             grid-template-columns: 25% 7.5% auto;
+//             gap: 70px;
+//             grid-template-areas: "mock colors text"
 
-            ;
-        }
+//             ;
+//         }
 
-        #pii-content {
-            grid-area: text;
-            align-items: center;
-            padding: 30px 0;
+//         #pii-content {
+//             grid-area: text;
+//             align-items: center;
+//             padding: 30px 0;
 
-            h1 {
-                color: $blue;
-            }
+//             h1 {
+//                 color: $blue;
+//             }
 
-            @include md {
-                padding: 70px 0;
-            }
-        }
+//             @include md {
+//                 padding: 70px 0;
+//             }
+//         }
 
-        #img-container {
-            grid-area: mock;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 50px;
+//         #img-container {
+//             grid-area: mock;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             padding-top: 50px;
 
-            @include md {
-                padding-top: 0;
-            }
+//             @include md {
+//                 padding-top: 0;
+//             }
 
-            img {
-                width: 50%;
+//             img {
+//                 width: 50%;
 
-                @include md {
-                    width: auto;
-                    height: auto;
-                }
+//                 @include md {
+//                     width: auto;
+//                     height: auto;
+//                 }
 
-                @include lg {
-                    width: 100%;
+//                 @include lg {
+//                     width: 100%;
 
-                }
+//                 }
 
-            }
-        }
+//             }
+//         }
 
-        #colors {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: "blue"
-                "dark"
-                "green"
-                "yellow"
-                "orange";
-            gap: 15px;
-            grid-area: colors;
+//         #colors {
+//             display: grid;
+//             grid-template-columns: repeat(1, 1fr);
+//             grid-template-areas: "blue"
+//                 "dark"
+//                 "green"
+//                 "yellow"
+//                 "orange";
+//             gap: 15px;
+//             grid-area: colors;
 
-            @include md {
-                gap: 20px;
-            }
+//             @include md {
+//                 gap: 20px;
+//             }
 
-            div {
-                width: auto;
-                height: auto;
-                margin-left: -20px;
+//             div {
+//                 width: auto;
+//                 height: auto;
+//                 margin-left: -20px;
 
-                @include md {
-                    margin-left: -30px;
-                }
+//                 @include md {
+//                     margin-left: -30px;
+//                 }
 
-                @include lg {
-                    margin-left: 0;
+//                 @include lg {
+//                     margin-left: 0;
 
-                }
-            }
+//                 }
+//             }
 
-            #blue {
-                grid-area: blue;
-                background-color: $blue;
-            }
+//             #blue {
+//                 grid-area: blue;
+//                 background-color: $blue;
+//             }
 
-            #dark-blue {
-                grid-area: dark;
-                background-color: $dark-blue;
-            }
+//             #dark-blue {
+//                 grid-area: dark;
+//                 background-color: $dark-blue;
+//             }
 
-            #green {
-                grid-area: green;
-                background-color: $green;
-            }
+//             #green {
+//                 grid-area: green;
+//                 background-color: $green;
+//             }
 
-            #yellow {
-                grid-area: yellow;
-                background-color: $yellow;
-            }
+//             #yellow {
+//                 grid-area: yellow;
+//                 background-color: $yellow;
+//             }
 
-            #orange {
-                grid-area: orange;
-                background-color: $orange;
-            }
+//             #orange {
+//                 grid-area: orange;
+//                 background-color: $orange;
+//             }
 
-        }
+//         }
 
-    }
+//     }
 
     
-}
+// }
 
-/* --------------------------
-    PII-slider
- --------------------------*/
- #pii-slides {
-    background-color: $grey;
-    position: relative;
-    z-index: 1200;
+// /* --------------------------
+//     PII-slider
+//  --------------------------*/
+//  #pii-slides {
+//     background-color: $grey;
+//     position: relative;
+//     z-index: 1200;
     
-        padding-bottom: 60px;
-        @include md{
-            padding-bottom: 100px;
-        }
+//         padding-bottom: 60px;
+//         @include md{
+//             padding-bottom: 100px;
+//         }
     
-    >div {
-        p{
-            display: flex;
-            justify-content: center;
-            font-weight: 400;
-            padding-bottom: 20px;
-            color: $blue;
+//     >div {
+//         p{
+//             display: flex;
+//             justify-content: center;
+//             font-weight: 400;
+//             padding-bottom: 20px;
+//             color: $blue;
 
-            span{
-                font-weight: 300;
-            }
+//             span{
+//                 font-weight: 300;
+//             }
 
-            @include md{
-                padding-bottom: 30px;
-            }
-            @include md{
-                padding-bottom: 40px;
-            }
-        }
-        .my-slider-2 {
+//             @include md{
+//                 padding-bottom: 30px;
+//             }
+//             @include md{
+//                 padding-bottom: 40px;
+//             }
+//         }
+//         .my-slider-2 {
 
-            div {
-                height: 300px;
+//             div {
+//                 height: 300px;
 
-                @include md {
-                    height: 200px;
-                }
+//                 @include md {
+//                     height: 200px;
+//                 }
 
-                @include lg {
-                    height: 250px;
-                }
+//                 @include lg {
+//                     height: 250px;
+//                 }
                 
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: auto;
-                    object-position: center;
+//                 img {
+//                     height: 100%;
+//                     width: 100%;
+//                     object-fit: auto;
+//                     object-position: center;
                   
                     
-                }
-            }
-        }
+//                 }
+//             }
+//         }
 
-        .tns-controls [aria-controls] {
-            color: $grey;
-            background: black;
-            border-radius: 0;
+//         .tns-controls [aria-controls] {
+//             color: $grey;
+//             background: black;
+//             border-radius: 0;
 
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-/* --------------------------
-    PII-Hero-2
- --------------------------*/
-#pii-hero-2 {
-    background-color: $grey;
-    margin-top: -10px;
-    >div {
-        background-image: url('../img/academic/pii-hero.jpg');
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+// /* --------------------------
+//     PII-Hero-2
+//  --------------------------*/
+// #pii-hero-2 {
+//     background-color: $grey;
+//     margin-top: -10px;
+//     >div {
+//         background-image: url('../img/academic/pii-hero.jpg');
+//         height: 100vh;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
 
-        @include md {
-            height: 100vh;
-        }
+//         @include md {
+//             height: 100vh;
+//         }
 
-        @include lg {
-            height: 100vh;
-        }
-    }
+//         @include lg {
+//             height: 100vh;
+//         }
+//     }
 
-}
+// }
 
-/* --------------------------
-    WNDR-Hero
- --------------------------*/
-#wndr-hero {
-    position: relative;
-    z-index: 1200;
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -10px 0px 100px black;
+// /* --------------------------
+//     WNDR-Hero
+//  --------------------------*/
+// #wndr-hero {
+//     position: relative;
+//     z-index: 1200;
+//     background-color: black;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: -10px 0px 100px black;
 
-    @include lg {
-        height: 100vh;
-    }
+//     @include lg {
+//         height: 100vh;
+//     }
 
-    #wndr-content {
-        img {
-            width: 200px;
+//     #wndr-content {
+//         img {
+//             width: 200px;
 
-            @include md {
-                width: 400px;
-            }
+//             @include md {
+//                 width: 400px;
+//             }
 
-            @include lg {
-                width: 500px;
-            }
-        }
-    }
-}
+//             @include lg {
+//                 width: 500px;
+//             }
+//         }
+//     }
+// }
 
-/* --------------------------
-    WNDR-Content
- --------------------------*/
-#wndr-container {
-    background-color: $grey;
-    position: relative;
-    z-index: 1300;
-    box-shadow: -10px 0px 100px black;
-    >div {
-        display: grid;
-        grid-template-columns: auto 7.5%;
-        grid-template-areas: " wndr-t wndr-colors"
-            "proc proc";
+// /* --------------------------
+//     WNDR-Content
+//  --------------------------*/
+// #wndr-container {
+//     background-color: $grey;
+//     position: relative;
+//     z-index: 1300;
+//     box-shadow: -10px 0px 100px black;
+//     >div {
+//         display: grid;
+//         grid-template-columns: auto 7.5%;
+//         grid-template-areas: " wndr-t wndr-colors"
+//             "proc proc";
 
-        gap: 20px;
+//         gap: 20px;
 
-        @include md {
-            grid-template-columns: 7.5% auto 25%;
-            grid-template-areas: "wndr-colors wndr-t proc "
-            ;
-            gap: 50px;
-        }
+//         @include md {
+//             grid-template-columns: 7.5% auto 25%;
+//             grid-template-areas: "wndr-colors wndr-t proc "
+//             ;
+//             gap: 50px;
+//         }
 
-        @include lg {
-            grid-template-columns: 25% 7.5% auto;
-            grid-template-areas: "proc  wndr-colors wndr-t"
-            ;
-            gap: 50px;
-        }
+//         @include lg {
+//             grid-template-columns: 25% 7.5% auto;
+//             grid-template-areas: "proc  wndr-colors wndr-t"
+//             ;
+//             gap: 50px;
+//         }
 
-        #wndr-colors {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: "black"
-                "white"
-                "red"
-                "org";
-            gap: 15px;
-            grid-area: wndr-colors;
+//         #wndr-colors {
+//             display: grid;
+//             grid-template-columns: repeat(1, 1fr);
+//             grid-template-areas: "black"
+//                 "white"
+//                 "red"
+//                 "org";
+//             gap: 15px;
+//             grid-area: wndr-colors;
 
-            @include md {
-                gap: 20px;
-            }
+//             @include md {
+//                 gap: 20px;
+//             }
 
-            div {
-                width: auto;
-                height: auto;
-                margin-right: -15px;
+//             div {
+//                 width: auto;
+//                 height: auto;
+//                 margin-right: -15px;
 
-                @include md {
-                    margin-left: -30px;
-                }
+//                 @include md {
+//                     margin-left: -30px;
+//                 }
 
-                @include lg {
-                    margin: 0;
+//                 @include lg {
+//                     margin: 0;
 
-                }
+//                 }
 
-            }
+//             }
 
-            #black {
-                grid-area: black;
-                background-color: black;
-            }
+//             #black {
+//                 grid-area: black;
+//                 background-color: black;
+//             }
 
-            #white {
-                grid-area: white;
-                background-color: white;
-            }
+//             #white {
+//                 grid-area: white;
+//                 background-color: white;
+//             }
 
-            #red {
-                grid-area: red;
-                background-color: $red;
-            }
+//             #red {
+//                 grid-area: red;
+//                 background-color: $red;
+//             }
 
-            #wndr-o {
-                grid-area: org;
-                background-color: $wndr-o;
-            }
+//             #wndr-o {
+//                 grid-area: org;
+//                 background-color: $wndr-o;
+//             }
 
-        }
+//         }
 
-        #wndr-content {
-            grid-area: wndr-t;
-            padding: 50px 0;
+//         #wndr-content {
+//             grid-area: wndr-t;
+//             padding: 50px 0;
 
-            @include md {
+//             @include md {
 
-                padding: 60px 0 60px 20px;
-            }
+//                 padding: 60px 0 60px 20px;
+//             }
 
-            @include lg {
-                padding: 90px 0 90px 30px;
-            }
-        }
+//             @include lg {
+//                 padding: 90px 0 90px 30px;
+//             }
+//         }
 
-        #wndr-process {
-            grid-area: proc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: auto;
+//         #wndr-process {
+//             grid-area: proc;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             height: auto;
 
-            ul {
-                li {
-                    img {
-                        height: auto;
-                        width: auto;
-                    }
+//             ul {
+//                 li {
+//                     img {
+//                         height: auto;
+//                         width: auto;
+//                     }
 
-                    padding-bottom: 20px;
+//                     padding-bottom: 20px;
 
-                }
-            }
-        }
+//                 }
+//             }
+//         }
 
-        #wndr-mockup {
-            grid-area: wndr-mock;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+//         #wndr-mockup {
+//             grid-area: wndr-mock;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
 
-            img {
-                width: 125%;
-                margin: 0 -30px;
+//             img {
+//                 width: 125%;
+//                 margin: 0 -30px;
 
-                @include md {
-                    width: 80%;
-                    margin: 0;
-                }
+//                 @include md {
+//                     width: 80%;
+//                     margin: 0;
+//                 }
 
-                @include lg {
-                    width: 100%;
-                    margin: 0;
-                }
-            }
-        }
+//                 @include lg {
+//                     width: 100%;
+//                     margin: 0;
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
-/* --------------------------
-    WNDR-slider
- --------------------------*/
-#wndr-slides {
-    background-color: $grey;
-    position: relative;
-    z-index: 1400;
-    >div {
+// /* --------------------------
+//     WNDR-slider
+//  --------------------------*/
+// #wndr-slides {
+//     background-color: $grey;
+//     position: relative;
+//     z-index: 1400;
+//     >div {
 
-        .my-slider {
+//         .my-slider {
 
-            div {
-                height: 300px;
+//             div {
+//                 height: 300px;
 
-                @include md {
-                    height: 400px;
-                }
+//                 @include md {
+//                     height: 400px;
+//                 }
 
-                @include lg {
-                    height: 600px;
-                }
+//                 @include lg {
+//                     height: 600px;
+//                 }
 
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                }
-            }
-        }
+//                 img {
+//                     height: 100%;
+//                     width: 100%;
+//                     object-fit: cover;
+//                     object-position: center;
+//                 }
+//             }
+//         }
 
-        .tns-controls [aria-controls] {
-            color: $grey;
-            background: black;
-            border-radius: 0;
-            background-color: $grey;
+//         .tns-controls [aria-controls] {
+//             color: $grey;
+//             background: black;
+//             border-radius: 0;
+//             background-color: $grey;
 
-        }
-    }
-}
+//         }
+//     }
+// }

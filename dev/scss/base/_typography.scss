@@ -44,7 +44,7 @@ p{
     font-weight: 800;
     text-decoration: none;
     color: black;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: left;
     font-size: rem-calc(35);
     // font-style: italic;
@@ -75,7 +75,7 @@ p{
                 font-weight: 300;
                 line-height: 30px;
                 text-align: left;
-                @include lg{line-height: 35px;
+                @include lg{line-height: 40px;
                     font-size: rem-calc(18);
                 }
 }
@@ -99,4 +99,106 @@ p{
    }
    
 }
+
+.project-summary-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    
+    text-align: left;
+    font-size: rem-calc(25);
+    // font-style: italic;
+
+    @include md{
+        font-size: rem-calc(30); 
+    }
+    @include lg{
+        font-size: rem-calc(25); 
+    }
+}
+
+.pad-left{
+   @include md{
+    margin-left: 40px;
+   }
+}
+.b-pad-left{
+    @include lg{
+     margin-left: 40px;
+    }
+ }
+
+.project-summary{
+    font-size: rem-calc(18);
+                font-family: 'Lato', serif;
+                font-weight: 300;
+                line-height: 30px;
+                text-align: left;
+                padding-bottom: 40px;
+                @include lg{line-height: 40px;
+                    font-size: rem-calc(18);
+                }
+}
+
+.project-name{
+    font-size: rem-calc(40);
+                font-family: 'Lato', serif;
+                font-weight: 300;
+                line-height: 40px;
+                text-align: left;
+                padding: 0 0 40px 0;
+                @include lg{line-height: 40px;
+                    font-size: rem-calc(50);
+                    
+                }
+}
+
+.visit{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    @include md{
+        margin-left: 40px;
+    }
+    a:link,
+    a:visited {
+        text-decoration: none;
+        >div{
+            border: black 1px solid;
+            background-color: black;
+            p{
+                padding: 10px;
+                color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: rem-calc(18);
+        font-weight: 600;
+        text-decoration: none;
+        
+        transition: 1s;
+        width: 100%;
+        text-align: left;
+    //    padding-bottom: 40px;
+            }
+        }
+    }
+
+    a:hover,
+    a:active {
+
+        >div{
+            border: black 1px solid;
+            background-color: $grey;
+            p{
+                color: black; 
+            }
+        }
+
+        
+    }
+}
+
+
+
 

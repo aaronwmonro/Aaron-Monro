@@ -95,6 +95,6 @@ export function exitAnimation(){
 }
 
 const exitTL = gsap.timeline();
-exitTL.to("#home-load", {duration: 1, yPercent:-100, ease: "none"}, "+=4.25");
+exitTL.to("#home-load", {duration: 1, yPercent:-200, ease: "none"}, "+=4.25");
 
 
