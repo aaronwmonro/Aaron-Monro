@@ -39,7 +39,7 @@
           display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
+                
             a:link,
         a:visited {
             text-decoration: none;
@@ -58,6 +58,7 @@
                     font-size: rem-calc(18);
                     color: black;
                     font-weight: 500;
+                    padding-bottom: 20px;
                 }
                 img{ transition: .5s;
                     align-items: center;
@@ -71,9 +72,15 @@
 
                         }
                     @include lg{
-                        filter: blur(3px);
                     }
 
+                }
+
+                h2{ font-family: 'Lato', serif;
+                    font-size: rem-calc(14);
+                    font-weight: 300;
+                    text-align: center;
+                    padding-top: 20px;
                 }
 
             }
@@ -90,7 +97,7 @@
                 }
                 img{
                   
-                    transform: scale(1.1);
+                    transform: scale(.9);
                     filter: blur(0px);
 
                     @include md{
@@ -98,7 +105,7 @@
                        
                         }
                     @include lg{
-                        filter: blur(0px);
+                       
                     }
                 }
 

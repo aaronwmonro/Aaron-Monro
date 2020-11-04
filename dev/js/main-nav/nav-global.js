@@ -17,7 +17,7 @@ var mainNavTimeline = gsap.timeline({
     paused: true
 })
 mainNavTimeline.to("#main-nav", {
-    duration: 0.75,x: -0})
+    duration: 0.75, x:0, overflow: "hidden", height: "100vh"})
 
 // reset the lines 
 gsap.set(".burger-lines", {
@@ -46,24 +46,26 @@ export function hideShowMainNav() {
 
 }
 
-var menuBackground = document.querySelector('#main-nav');
-window.onclick = function (event) {
-    if (event.target == menuBackground) {
-        hideShowMainNav();
-    }
-}
 
-function reportWindowSize() {
-    console.log("test");
-    if (canYouSeeTheMenu === false) {
-        console.log("can't see the main nav");
-        console.log($("#main-nav").outerWidth());
-        navWidth = $("#main-nav").outerWidth();
-        gsap.set("#main-nav", {
-            y: -navWidth
-        });
-    }
-}
 
-window.addEventListener('resize', reportWindowSize);
+// export function reportWindowSize() {
+//     console.log("test");
+//     if (canYouSeeTheMenu === false) {
+//         console.log("can't see the main nav");
+//         console.log($("#main-nav").outerWidth());
+//         navWidth = $("#main-nav").outerWidth();
+//         gsap.set("#main-nav", {
+//             y: -navWidth
+//         });
+//     }
+// }
+
+// window.addEventListener('resize', reportWindowSize);
+
+// var menuBackground = document.querySelector('#main-nav');
+// window.onclick = function (event) {
+//     if (event.target == menuBackground) {
+//         hideShowMainNav();
+//     }
+// }
 

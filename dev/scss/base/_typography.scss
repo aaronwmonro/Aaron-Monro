@@ -58,6 +58,26 @@ p{
     
 }
 
+.section-title-about{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: rem-calc(30);
+    // font-style: italic;
+
+    @include md{
+        font-size: rem-calc(25); 
+    }
+    @include lg{
+        padding-bottom: 0px;
+        font-size: rem-calc(25); 
+    }
+    
+}
+
 // .section-text{ padding: 20px 0 0;
 //     font-family: 'Lato', sans-serif;
 //     font-weight: 300;
@@ -75,6 +95,18 @@ p{
                 font-weight: 300;
                 line-height: 30px;
                 text-align: left;
+                @include lg{line-height: 40px;
+                    font-size: rem-calc(18);
+                }
+}
+
+.section-text-about{
+    font-size: rem-calc(18);
+                font-family: 'Lato', serif;
+                font-weight: 300;
+                line-height: 30px;
+                text-align: left;
+                margin-bottom: 20px;
                 @include lg{line-height: 40px;
                     font-size: rem-calc(18);
                 }

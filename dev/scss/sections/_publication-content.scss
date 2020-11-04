@@ -1,6 +1,10 @@
 #pub-section{
     overflow: hidden;
 }
+#magazine-flip{
+    padding-top: 100px;
+    height: 500px;
+}
 #orchestra-type-container{
     @include md{
                     display: grid;

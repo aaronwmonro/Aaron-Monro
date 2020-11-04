@@ -81,6 +81,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: visible;
         h1{
             font-family: 'Playfair Display', serif;
             font-weight: 800;
@@ -93,6 +94,7 @@
 
             @include lg{
                 font-size: rem-calc(100);
+               
             }
         }
         p{font-size: rem-calc(20);
@@ -104,7 +106,7 @@
 
             @include md{
                 
-                font-size: rem-calc(25);
+                font-size: rem-calc(30);
             }
             span{
                 font-size: rem-calc(18);
@@ -263,9 +265,7 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: 140%;    
-        opacity: .5;
-        filter: blur(3px);
-
+        
         @include md{
             height: 40vh;
         }
@@ -278,16 +278,8 @@
         a:hover,
         a:active {
             #web-img{
-                height: 40vh;
-                opacity: 1;
-                filter: blur(0px);
-
-                @include md{
-                    height: 45vh;
-                }
-                @include lg{
-                    height: 45vh;
-                }
+                transform: scale(.9);
+                // box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
             }
         }
       }
@@ -349,8 +341,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;    
-        opacity: .5;
-        filter: blur(3px);
+      
         @include md{
             height: 40vh;
         }
@@ -363,16 +354,7 @@
         a:hover,
         a:active {
             #branding-img{
-                height: 40vh;
-                opacity: 1;
-                filter: blur(0px);
-
-                @include md{
-                    height: 45vh;
-                }
-                @include lg{
-                    height: 45vh;
-                }
+                transform: scale(.9);
             }
         }
       }
@@ -443,8 +425,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;    
-        opacity: .5;
-        filter: blur(3px);
+        
         @include md{
             height: 40vh;
         }
@@ -457,16 +438,7 @@
         a:hover,
         a:active {
             #pub-img{
-                height: 40vh;
-                opacity: 1;
-                filter: blur(0px);
-
-                @include md{
-                    height: 45vh;
-                }
-                @include lg{
-                    height: 45vh;
-                }
+                transform: scale(.9);
             }
         }
       }
@@ -529,9 +501,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;    
-        opacity: .5;
-        filter: blur(3px);
-
+        opacity: 1;
+        // filter: blur(3px);
+        transform: scale(1);
         @include md{
             height: 40vh;
         }
@@ -544,16 +516,8 @@
         a:hover,
         a:active {
             #il-img{
-                height: 40vh;
-                opacity: 1;
-                filter: blur(0px);
-
-                @include md{
-                    height: 45vh;
-                }
-                @include lg{
-                    height: 45vh;
-                }
+                transform: scale(.9);
+                
             }
         }
       }

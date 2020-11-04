@@ -10,7 +10,10 @@ gsap.registerPlugin( MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin, TextPlugin);
 import {gsap} from "gsap";
 import {TextPlugin} from "gsap/TextPlugin";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-
+import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
+// import {GSDevTools} from "gsap/GSDevTools";
+// gsap.registerPlugin(GSDevTools);
+// GSDevTools.create();
 
 
 import $ from "jquery";
@@ -18,6 +21,7 @@ import $ from "jquery";
 import { burgerAnimationTimeLine } from "./main-nav/burger-animation";
 
 import {canYouSeeTheMenu} from "./main-nav/nav-global.js"
+// import {reportWindowSize} from "./main-nav/nav-global.js"
 
 
 // import {} from "./sections/illustrations/.js"
@@ -38,6 +42,18 @@ progressAnimation();
 //main nav clicks
 $("#burger").on("click", hideShowMainNav);
 
+// $("body").addClass("stop-scrolling", function () {
+
+
+//     if (canYouSeeTheMenu === false) {
+//         console.log("allow-scrolling")
+        
+//     } else {
+//         console.log("stop-scrolling")
+
+//     }
+
+// })
 
 
 $("#burger").on("mouseenter", function () {
@@ -70,17 +86,26 @@ $("#burger").on("mouseleave", function () {
 
 
 
-import {loadScreenAnimation, loadScreenTwoAnimation, loadAnimation, exitAnimation} from "./load-screen.js";
+import {loadScreenAnimation, loadScreenTwoAnimation, loadAnimation, exitAnimation, welcomeAnimation, helloAnimation, arrowAnimation} from "./load-screen.js";
 loadScreenAnimation();
 loadScreenTwoAnimation();
 loadAnimation();
 exitAnimation();
+welcomeAnimation();
+helloAnimation();
+arrowAnimation();
 
 
 import {resumeAnimation, resumeClickAnimation } from "./sections/resume-button";
 
 resumeAnimation();
 resumeClickAnimation();
+
+// import {websterAnimation} from "./sections/webster";
+
+// websterAnimation();
+
+
 
 
 

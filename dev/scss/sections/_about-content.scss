@@ -8,15 +8,17 @@
      background-color: white;
 overflow: hidden;
      >div{
-         padding-top: 40px;
+         padding-top: 100px;
        
 
         @include lg{
+            padding-top: 80px;
+            // margin-top: -100px;
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas: "head content";
             // margin: 0 100px;
-            height: 100vh;
+            height: auto;
         }
 
         #about-img-container{
@@ -24,12 +26,16 @@ overflow: hidden;
                 justify-content: center;
                 align-items: center;
                 grid-area: head;
-                margin-right: 40px;
+                padding-bottom: 40px;
+                overflow: hidden;
+                @include lg{
+                    margin-right: 40px;
+                }
                
                 
             #about-pic{
                 
-                height: 40vh;
+                height: 50vh;
                 object-fit: cover;
                 object-position: center;
                 width: 100%;
@@ -39,7 +45,7 @@ overflow: hidden;
                    
                 }
                 @include lg{ 
-                    height: 60vh;
+                    height: 120%;
                     width: 100%;
                 }
             }
@@ -48,20 +54,22 @@ overflow: hidden;
         #about-content{display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            // align-items: center;
             grid-area: content;
+            align-items: flex-start;
             @include md{
                 padding: 30px 0 30px 30px;
             }
             p{ grid-area: para;
-                padding: 20px 0 0;
+                padding: 0px 0 0;
                 @include md{
                     padding: 0;
                 }
             }
             @include lg{
                 border-left: black solid 1px;
-                margin: 20vh 0;
+                margin: 0vh 0;
+                align-items: flex-start;
             }
             #resume-content{
                 grid-area: res;
@@ -161,20 +169,30 @@ overflow: hidden;
                 grid-area: social;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
                 padding-top: 20px;
+                align-items: flex-start;
+                @include lg{
+                    align-items: flex-start;
+                }
         
                     a:link,
                     a:visited {
                         color: black;
                         font-size: rem-calc(35);
                         transition: 0.25s;
-                        padding: 0 40px;
+                        padding: 0 40px 0 0;
+                        transform: scale(1);
+
+                        @include lg{
+                            padding: 0 40px 0 0;
+                        }
                     }
         
                     a:hover,
                     a:active {
                         color: $grey;
+                        transform: scale(1.2);
                     }
             
             }

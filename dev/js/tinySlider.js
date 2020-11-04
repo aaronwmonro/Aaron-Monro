@@ -69,7 +69,7 @@ if(mySlider9.length > 0){
   tns({
     container: '.my-slider-9',
     items: 1,
-    gutter: 40,
+    gutter: 10,
     edgePadding: 20,
     controls: true,
     controlsPosition: "bottom",
@@ -78,9 +78,9 @@ if(mySlider9.length > 0){
     // autoWidth: true,
     responsive: {
       "350": {
-        edgePadding: 20
+        edgePadding: 0
       },
-      "768": {
+      "768": {gutter: 40,
         edgePadding: 100
       },
       "1040": {
@@ -121,7 +121,7 @@ if(mySlider8.length > 0){
   tns({
     container: '.my-slider-8',
     items: 1,
-    gutter: 40,
+    gutter: 10,
     edgePadding: 20,
     controls: true,
     controlsPosition: "bottom",
@@ -130,9 +130,9 @@ if(mySlider8.length > 0){
     // autoWidth: true,
     responsive: {
       "350": {
-        edgePadding: 20
+        edgePadding: 0
       },
-      "768": {
+      "768": {gutter: 40,
         edgePadding: 100
       },
       "1040": {

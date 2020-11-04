@@ -704,12 +704,11 @@ ul li {
   font-size: 0.875rem;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .sketch div a:link img,
 .sketch div a:visited img {
   transform: scale(1);
-  filter: blur(3px);
   width: 100%;
   height: auto;
   transition: 0.5s;
@@ -775,6 +774,27 @@ p {
   }
 }
 
+.section-title-about {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .section-title-about {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 992px) {
+  .section-title-about {
+    padding-bottom: 0px;
+    font-size: 1.5625rem;
+  }
+}
+
 .section-text {
   font-size: 1.125rem;
   font-family: "Lato", serif;
@@ -784,6 +804,21 @@ p {
 }
 @media (min-width: 992px) {
   .section-text {
+    line-height: 40px;
+    font-size: 1.125rem;
+  }
+}
+
+.section-text-about {
+  font-size: 1.125rem;
+  font-family: "Lato", serif;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .section-text-about {
     line-height: 40px;
     font-size: 1.125rem;
   }
@@ -1313,6 +1348,7 @@ textarea {
   height: 100vh;
   width: 100%;
   z-index: 1100;
+  transform: translate(0px, 0px);
 }
 @media (min-width: 992px) {
   #main-nav {
@@ -1341,6 +1377,11 @@ textarea {
 #main-nav ul li a:active {
   color: #e7c609;
   letter-spacing: 3px;
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* =============
@@ -1827,7 +1868,7 @@ header div #socials-container #socials a:visited {
   header div #socials-container #socials a:hover,
 header div #socials-container #socials a:active {
     color: #e7c609;
-    font-size: 1.875rem;
+    transform: scale(1.2);
     letter-spacing: 2px;
   }
 }
@@ -2044,6 +2085,7 @@ progress::-moz-progress-bar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: visible;
 }
 #home-start #hello-section h1 {
   font-family: "Playfair Display", serif;
@@ -2071,7 +2113,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #home-start #hello-section p {
-    font-size: 1.5625rem;
+    font-size: 1.875rem;
   }
 }
 #home-start #hello-section p span {
@@ -2209,8 +2251,6 @@ progress::-moz-progress-bar {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 140%;
-  opacity: 0.5;
-  filter: blur(3px);
 }
 @media (min-width: 768px) {
   #web-home-container > div #web-img-container a:link #web-img,
@@ -2226,21 +2266,7 @@ progress::-moz-progress-bar {
 }
 #web-home-container > div #web-img-container a:hover #web-img,
 #web-home-container > div #web-img-container a:active #web-img {
-  height: 40vh;
-  opacity: 1;
-  filter: blur(0px);
-}
-@media (min-width: 768px) {
-  #web-home-container > div #web-img-container a:hover #web-img,
-#web-home-container > div #web-img-container a:active #web-img {
-    height: 45vh;
-  }
-}
-@media (min-width: 992px) {
-  #web-home-container > div #web-img-container a:hover #web-img,
-#web-home-container > div #web-img-container a:active #web-img {
-    height: 45vh;
-  }
+  transform: scale(0.9);
 }
 
 @media (min-width: 768px) {
@@ -2298,8 +2324,6 @@ progress::-moz-progress-bar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
-  filter: blur(3px);
 }
 @media (min-width: 768px) {
   #branding-home-container > div #branding-img-container a:link #branding-img,
@@ -2315,21 +2339,7 @@ progress::-moz-progress-bar {
 }
 #branding-home-container > div #branding-img-container a:hover #branding-img,
 #branding-home-container > div #branding-img-container a:active #branding-img {
-  height: 40vh;
-  opacity: 1;
-  filter: blur(0px);
-}
-@media (min-width: 768px) {
-  #branding-home-container > div #branding-img-container a:hover #branding-img,
-#branding-home-container > div #branding-img-container a:active #branding-img {
-    height: 45vh;
-  }
-}
-@media (min-width: 992px) {
-  #branding-home-container > div #branding-img-container a:hover #branding-img,
-#branding-home-container > div #branding-img-container a:active #branding-img {
-    height: 45vh;
-  }
+  transform: scale(0.9);
 }
 
 @media (min-width: 768px) {
@@ -2399,8 +2409,6 @@ progress::-moz-progress-bar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
-  filter: blur(3px);
 }
 @media (min-width: 768px) {
   #pub-home-container > div #pub-img-container a:link #pub-img,
@@ -2416,21 +2424,7 @@ progress::-moz-progress-bar {
 }
 #pub-home-container > div #pub-img-container a:hover #pub-img,
 #pub-home-container > div #pub-img-container a:active #pub-img {
-  height: 40vh;
-  opacity: 1;
-  filter: blur(0px);
-}
-@media (min-width: 768px) {
-  #pub-home-container > div #pub-img-container a:hover #pub-img,
-#pub-home-container > div #pub-img-container a:active #pub-img {
-    height: 45vh;
-  }
-}
-@media (min-width: 992px) {
-  #pub-home-container > div #pub-img-container a:hover #pub-img,
-#pub-home-container > div #pub-img-container a:active #pub-img {
-    height: 45vh;
-  }
+  transform: scale(0.9);
 }
 
 @media (min-width: 768px) {
@@ -2489,8 +2483,8 @@ progress::-moz-progress-bar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
-  filter: blur(3px);
+  opacity: 1;
+  transform: scale(1);
 }
 @media (min-width: 768px) {
   #il-home-container > div #il-img-container a:link #il-img,
@@ -2506,21 +2500,7 @@ progress::-moz-progress-bar {
 }
 #il-home-container > div #il-img-container a:hover #il-img,
 #il-home-container > div #il-img-container a:active #il-img {
-  height: 40vh;
-  opacity: 1;
-  filter: blur(0px);
-}
-@media (min-width: 768px) {
-  #il-home-container > div #il-img-container a:hover #il-img,
-#il-home-container > div #il-img-container a:active #il-img {
-    height: 45vh;
-  }
-}
-@media (min-width: 992px) {
-  #il-home-container > div #il-img-container a:hover #il-img,
-#il-home-container > div #il-img-container a:active #il-img {
-    height: 45vh;
-  }
+  transform: scale(0.9);
 }
 
 #personal-gallery {
@@ -2656,14 +2636,15 @@ progress::-moz-progress-bar {
   overflow: hidden;
 }
 #about-container > div {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 @media (min-width: 992px) {
   #about-container > div {
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "head content";
-    height: 100vh;
+    height: auto;
   }
 }
 #about-container > div #about-img-container {
@@ -2671,10 +2652,16 @@ progress::-moz-progress-bar {
   justify-content: center;
   align-items: center;
   grid-area: head;
-  margin-right: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  #about-container > div #about-img-container {
+    margin-right: 40px;
+  }
 }
 #about-container > div #about-img-container #about-pic {
-  height: 40vh;
+  height: 50vh;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -2686,7 +2673,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 992px) {
   #about-container > div #about-img-container #about-pic {
-    height: 60vh;
+    height: 120%;
     width: 100%;
   }
 }
@@ -2694,8 +2681,8 @@ progress::-moz-progress-bar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   grid-area: content;
+  align-items: flex-start;
 }
 @media (min-width: 768px) {
   #about-container > div #about-content {
@@ -2704,7 +2691,7 @@ progress::-moz-progress-bar {
 }
 #about-container > div #about-content p {
   grid-area: para;
-  padding: 20px 0 0;
+  padding: 0px 0 0;
 }
 @media (min-width: 768px) {
   #about-container > div #about-content p {
@@ -2714,7 +2701,8 @@ progress::-moz-progress-bar {
 @media (min-width: 992px) {
   #about-container > div #about-content {
     border-left: black solid 1px;
-    margin: 20vh 0;
+    margin: 0vh 0;
+    align-items: flex-start;
   }
 }
 #about-container > div #about-content #resume-content {
@@ -2749,19 +2737,32 @@ progress::-moz-progress-bar {
   grid-area: social;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 20px;
+  align-items: flex-start;
+}
+@media (min-width: 992px) {
+  #about-container > div #about-content #about-social {
+    align-items: flex-start;
+  }
 }
 #about-container > div #about-content #about-social a:link,
 #about-container > div #about-content #about-social a:visited {
   color: black;
   font-size: 2.1875rem;
   transition: 0.25s;
-  padding: 0 40px;
+  padding: 0 40px 0 0;
+  transform: scale(1);
+}
+@media (min-width: 992px) {
+  #about-container > div #about-content #about-social a:link,
+#about-container > div #about-content #about-social a:visited {
+    padding: 0 40px 0 0;
+  }
 }
 #about-container > div #about-content #about-social a:hover,
 #about-container > div #about-content #about-social a:active {
   color: #e7c609;
+  transform: scale(1.2);
 }
 
 /* --------------------------
@@ -3132,19 +3133,23 @@ Illustration Gallery
 #illustration-gallery > div ul li a:link,
 #illustration-gallery > div ul li a:visited {
   transition: 0.5s;
-  opacity: 60%;
 }
 #illustration-gallery > div ul li a:link img,
 #illustration-gallery > div ul li a:visited img {
-  transform-origin: 1s;
+  transition: 0.5s;
   object-fit: cover;
   object-position: center;
   height: 40vh;
   width: 100%;
+  transform: scale(1);
 }
 #illustration-gallery > div ul li a:hover,
 #illustration-gallery > div ul li a:active {
   opacity: 100%;
+}
+#illustration-gallery > div ul li a:hover img,
+#illustration-gallery > div ul li a:active img {
+  transform: scale(0.9);
 }
 
 #schwab-brothers-hydraulics {
@@ -3180,7 +3185,6 @@ Illustration Gallery
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 #misc-projects > div #misc-anchors a:link,
 #misc-projects > div #misc-anchors a:visited {
@@ -3203,6 +3207,7 @@ Illustration Gallery
   font-size: 1.125rem;
   color: black;
   font-weight: 500;
+  padding-bottom: 20px;
 }
 #misc-projects > div #misc-anchors a:link div img,
 #misc-projects > div #misc-anchors a:visited div img {
@@ -3220,24 +3225,19 @@ Illustration Gallery
     height: 250px;
   }
 }
-@media (min-width: 992px) {
-  #misc-projects > div #misc-anchors a:link div img,
-#misc-projects > div #misc-anchors a:visited div img {
-    filter: blur(3px);
-  }
+#misc-projects > div #misc-anchors a:link div h2,
+#misc-projects > div #misc-anchors a:visited div h2 {
+  font-family: "Lato", serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
 }
 #misc-projects > div #misc-anchors a:hover div img,
 #misc-projects > div #misc-anchors a:active div img {
-  transform: scale(1.1);
+  transform: scale(0.9);
   filter: blur(0px);
 }
-@media (min-width: 992px) {
-  #misc-projects > div #misc-anchors a:hover div img,
-#misc-projects > div #misc-anchors a:active div img {
-    filter: blur(0px);
-  }
-}
-
 #branding-intro {
   height: 40vh;
   border-bottom: black solid 1px;
@@ -3265,12 +3265,6 @@ Illustration Gallery
 #branding-intro > div .logo-container a:visited {
   transition: 0.5s;
 }
-@media (min-width: 992px) {
-  #branding-intro > div .logo-container a:link,
-#branding-intro > div .logo-container a:visited {
-    filter: blur(3px);
-  }
-}
 #branding-intro > div .logo-container a:link svg,
 #branding-intro > div .logo-container a:visited svg {
   transition: 0.5s;
@@ -3283,10 +3277,15 @@ Illustration Gallery
     height: 12vh;
   }
 }
+@media (min-width: 992px) {
+  #branding-intro > div .logo-container a:link svg,
+#branding-intro > div .logo-container a:visited svg {
+    height: 17vh;
+  }
+}
 #branding-intro > div .logo-container a:hover,
 #branding-intro > div .logo-container a:active {
-  filter: blur(0px);
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 #branding-intro > div #chad-logo-container {
   display: flex;
@@ -3295,10 +3294,12 @@ Illustration Gallery
 }
 #branding-intro > div #chad-logo-container a:link,
 #branding-intro > div #chad-logo-container a:visited {
-  transform: scale(1);
+  transition: 0.5s;
 }
 #branding-intro > div #chad-logo-container a:link svg,
 #branding-intro > div #chad-logo-container a:visited svg {
+  transition: 0.5s;
+  transform: scale(1);
   height: 40px;
 }
 @media (min-width: 768px) {
@@ -3307,9 +3308,15 @@ Illustration Gallery
     height: 8vh;
   }
 }
+@media (min-width: 992px) {
+  #branding-intro > div #chad-logo-container a:link svg,
+#branding-intro > div #chad-logo-container a:visited svg {
+    height: 13vh;
+  }
+}
 #branding-intro > div #chad-logo-container a:hover,
 #branding-intro > div #chad-logo-container a:active {
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 
 #pii-hero {
@@ -3487,8 +3494,26 @@ Illustration Gallery
   }
 }
 
+#webster-farm-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#webster-farm-animation svg {
+  width: 30vw;
+  overflow: visible;
+}
+
 #pub-section {
   overflow: hidden;
+}
+
+#magazine-flip {
+  padding-top: 100px;
+  height: 500px;
 }
 
 @media (min-width: 768px) {

@@ -130,7 +130,7 @@ header {
         a:hover,
         a:active {
             color: $grey;
-            font-size: rem-calc(30);
+            transform: scale(1.2);
             // border-radius: 0;
             // border: none;
             letter-spacing: 2px;

@@ -25,6 +25,7 @@ var morphAnimationSpeed = .20;
 //             .from("#thirteen",{duration: morphAnimationSpeed, ry:30, rx:30, ease: "power2"}, "morphTL")       
 // ;
 
+
 const loadScreenTL = gsap.timeline({repeat: 3, yoyo: true});
 loadScreenTL.to("#one",{duration: morphAnimationSpeed, y: -100, ease: "power2"}, "morphTL")
             .to("#two",{duration: morphAnimationSpeed,  y: -100, ease: "power2"}, "morphTL+=.05")
@@ -96,5 +97,32 @@ export function exitAnimation(){
 
 const exitTL = gsap.timeline();
 exitTL.to("#home-load", {duration: 1, yPercent:-200, ease: "none"}, "+=4.25");
+
+
+
+const welcomeTL = gsap.timeline();
+welcomeTL.to("#welcome", {duration: 2, text:"Welcome To My Portfolio", ease: "none"}, "+=4.5")
+        .to("#welcome", {duration: 3, text:"Coded, Designed & Managed by ME", ease: "none"}, "+=1");
+
+        export function welcomeAnimation(){
+            return welcomeTL;
+           
+        }
+
+const helloTL = gsap.timeline();
+helloTL.from("#hello-section", {duration: 1.5, y: 500, ease: "back"}, "+=4.25");
+
+        export function helloAnimation(){
+            return helloTL;
+           
+        }
+
+const arrowTL = gsap.timeline();
+arrowTL.from("#arrow", {duration: 1.5, y: -200, ease: "bounce", alpha: 0}, "+=9.25");
+
+        export function arrowAnimation(){
+            return arrowTL;
+           
+        }
 
 

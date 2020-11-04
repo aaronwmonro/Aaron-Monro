@@ -386,7 +386,7 @@ ul {
         font-size: rem-calc(14);
         font-weight: 300;
         text-align: center;
-        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
         a:link,
@@ -395,7 +395,7 @@ ul {
          
             img{
                 transform: scale(1);
-                filter: blur(3px);
+            
                width: 100%;
                 height: auto;
                 transition: .5s;

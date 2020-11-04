@@ -118,12 +118,13 @@ Illustration Gallery
             a:link,
             a:visited {
                 transition: 0.5s;
-                opacity: 60%;
-                img {transform-origin: 1s;
+               
+                img { transition: 0.5s;
                     object-fit: cover;
                     object-position: center;
                     height: 40vh;
                     width: 100%;
+                    transform: scale(1);
                    
                 }
             }
@@ -131,7 +132,9 @@ Illustration Gallery
             a:hover,
             a:active {
                 opacity: 100%; 
-                
+                img{
+                    transform: scale(.9);
+                }
             }
         }
     }
